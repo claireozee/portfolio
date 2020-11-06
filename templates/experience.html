@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <title>Experience</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}"/>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navcontent">
+            <h1 class="navname"><a href="/" class="backhome">Claire Ozee</a></h1>
+            <div class="navlinks">
+                <a href="/experience" class="active">Experience</a>
+                <a href="/projects">Projects</a>
+                <a href="/blog">Blog</a>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="experience-content">
+        <div class="timeline">
+            <div class="container c1">
+                <h3 class="daysofcode-name">#100DaysOfCode</h3>
+                <h6>Nov 2019</h6>
+            </div>
+            <div class="container c2">
+                <h3 class="hackgirlsummer-name">Hack Girl Summer</h3>
+                <h6>Jun 2020</h6>
+            </div>
+            <div class="container c3" style="display: none">
+                <h3 class="siliconvalley-name">Silicon Valley</h3>
+                <h6>Sep 2020</h6>
+            </div>
+            <div class="container c4" style="display: none">
+                <h3 class="EXPERIENCEFOUR-name">EXPERIENCE FOUR</h3>
+                <h6>DATE 2020</h6>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <div class="tl-content daysofcode">
+                <h2>#100DaysOfCode</h2>
+                <img src="/static/images/twitter.jpeg" class="twitter-img"><br/>
+                <p><a href='https://www.codefirstgirls.org.uk/learners/' target="_blank">CodeFirst: Girls</a>' web development courses was where I had my first introduction itnto the tech industry.<br/>
+
+                    100daysofcode
+                - cfg = intro into industry<br/>
+                - cfg annual conference - eyes opened<br/>
+                - started 100 days of code <br/><br/>
+
+                Personal goals: 1..., 2..., 3... .<br/>
+                    What I did to achieve the goals
+                    went to tech events, networked within the community, build my skills
+                    html, css, python, js, daily coding challenges<br/><br/>
+
+                Lessons learnt:<br/>
+                1. Developing a skill require a lot of time to be invested in it<br/>
+                2. Breaks are necessary otherwise learning is counterproductive<br/>
+                3. Opportunities are out there - create them if you can't find them<br/>
+                
+                Highlight
+                </p>
+                
+                <img src="/static/images/google.jpeg" class="google-img"><br/>
+                <img src="/static/images/microsoft.jpeg" class="microsoft-img">
+            </div>
+            <div class="tl-content hackgirlsummer">
+                <h2>Hack Girl Summer Hackathon</h2>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+                <p>Student hackathon</p><br/>
+            </div>
+            <div class="tl-content siliconvalley">
+                <h2>Silicon Valley</h2>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+                <p>san fran babyyy</p><br/>
+            </div>
+            <div class="tl-content EXPERIENCEFOUR">
+                <h2>EXPERIENCE FOUR</h2>
+                <p>experience four</p><br/>
+                <p>experience four</p><br/>
+                <p>experience four</p><br/>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footercontent">
+           <i class="fab fa-instagram fa-2x"><a href="https://instagram.com/ozee.jpg/" target="_blank"></a></i>
+   
+           <i class="fab fa-linkedin fa-2x"><a href="https://linkedin.com/in/claireozee" target="_blank"></a></i>
+   
+           <i class="fab fa-github fa-2x"><a href="https://github.com/claireozee" target="_blank"></a></i>
+   
+           <i class="far fa-envelope fa-2x"></i>
+       </div>
+       <p id="copyright"><small><small>© Ozee 2020</small></small></p>
+    </div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
+<script src="https://kit.fontawesome.com/ace997583a.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.tl-content').hide();  
+        $('.daysofcode-name').click(function() {
+            $('.daysofcode').fadeIn("fast");
+            $(".hackgirlsummer").fadeOut("fast");
+            $('.siliconvalley').fadeOut("fast");
+            $('.timeline-content').css("height", "180vh");
+            $('#experience-content').css("height", "200vh");
+        });
+        $('.hackgirlsummer-name').click(function() {
+            $('.daysofcode').fadeOut("fast");
+            $('.hackgirlsummer').fadeIn("fast");
+            $('.siliconvalley').fadeOut("fast");
+            $('.timeline-content').css("height", "180vh");
+            $('#experience-content').css("height", "200vh");
+        });
+        $('.siliconvalley-name').click(function() {
+            $('.daysofcode').fadeOut("fast");
+            $('.hackgirlsummer').fadeOut("fast");
+            $('.siliconvalley').fadeIn("fast");
+            $('.timeline-content').css("height", "180vh");
+            $('#experience-content').css("height", "200vh");
+            //difference of 20 as 'timeline' is 20vh - in order for it to stay in place when expereince is clicked
+            //make each section as long as the content needs, but ensure a difference of 20
+        });
+
+        //not to reopen when content is already showing
+
+
+
+
+    });
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>Creative</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}"/>
+</head>
+
+<body onload="typeWriter()">
+
+    <div class="navbar" id="creative-navbar">
+        <div class="navcontent">
+            <h1 class="navname"><a href="/" class="backhome">Claire Ozee</a></h1>
+            <div class="navlinks">
+                <a href="/" id="creative-home">Home</a>
+                <a href="/experience">Experience</a>
+                <a href="/projects">Projects</a>
+                <a href="/blog">Blog</a>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="type-it"></div>
+    <div class="footer">
+        <div class="footercontent">
+           <i class="fab fa-instagram fa-2x"><a href="https://instagram.com/ozee.jpg/"></a></i>
+   
+           <i class="fab fa-linkedin fa-2x"><a href="https://linkedin.com/in/claireozee"></a></i>
+   
+           <i class="fab fa-github fa-2x"><a href="https://github.com/claireozee"></a></i>
+   
+           <i class="far fa-envelope fa-2x"></i>
+       </div>
+       <p id="copyright"><small><small>© Ozee 2020</small></small></p>
+   </div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
+<script src="https://kit.fontawesome.com/ace997583a.js"></script>
+<script>
+    var i = 0;
+    var txt = 'come back soon...'; /* The text */
+    var speed = 90; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("type-it").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+
+// delete this
+    $(document).ready(function() {
+        $('#type-it').typeIt({
+            strings: ['This is my string!']
+        });
+        $('#creative-home').click({
+
+        });
+            $('.navbar').show();
+    });
+</script>
+</body>
+</html>

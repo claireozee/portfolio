@@ -1,0 +1,394 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
+body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*home*/
+.homebody{
+    box-shadow: inset 0px -140px 100px -100px  rgb(186, 186, 186);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing {
+    padding: 1vh;
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name h1 {
+    font-size: 12vw;
+    margin-top: 0;
+}
+
+.about-top-col {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-left {
+    margin-right: 5vh;
+}
+
+.about-left, .about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-content button {
+    position: fixed;
+    bottom: 20vh;
+    padding: 1vh;
+    background-color: white;
+    border: 2px solid rgba(183, 183, 183);
+    color: rgba(183, 183, 183);
+}
+
+#home-content button:hover {
+    color: blue;
+    border: 2px solid blue;
+}
+
+#home-content button:active {
+    border: 2px solid red;
+}
+
+.intern-img {
+    height: 40vh;
+    width: 32vh;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
+    position: relative; /* bottom of styling for everything to show - why?*/
+}
+
+.socials {
+    border: solid 2px rosybrown;
+    padding: 100px;
+    /*perspective: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg);*/
+}
+
+/*icons*/
+.fab, .far {
+    padding: 1vh;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: linear-gradient(to bottom, #6600cc 0%, #ff6600 100%);
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.fa-github:hover {
+    color: rgb(36, 41, 46);
+}
+
+.fa-envelope:hover {
+    color: blue;
+}
+
+#copyright {
+    margin: 0;
+}
+
+p {
+    color: black;
+}
+
+/*nav*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);   
+    box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
+    height: 10vh;
+    padding: 1vh;
+    position: relative; /*for box shadow to show*/
+}
+
+.navcontent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navlinks a, #to-creative {
+    text-decoration: none;
+    color: rgb(182, 182, 182);  
+}
+
+.navlinks a {
+    padding: 1.2vh;
+    margin: 0 1vh;
+}
+
+.navlinks a:hover, #to-creative:hover {
+    color: orange;
+}
+
+.navlinks a:active, #to-creative:active {
+    color: blue;
+}
+
+.navname {
+    margin: 1vh;
+}
+
+.backhome {
+    color: black;
+    text-decoration: none;
+}
+
+.backhome:hover {
+    color: rgba(80, 80, 80);
+}
+
+.active {
+    color: rgb(59, 59, 59);
+    border-bottom: 3px solid blue;
+}
+
+.content {
+    height: 62.2vh;
+    padding: 9vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*experience*/
+.timeline {
+    overflow-x: scroll;
+    padding: 1vh;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    top: 0;
+}
+
+.timeline-content {
+    padding: 1vh;
+    width: 80%;
+    height: 70%;
+}
+
+.tl-content {
+    border: red 1px solid;
+}
+
+/* The actual timeline (the horizontal ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    height: 0.5vh;
+    width: 60%;
+    background-color: blue;
+    top: 2.5vh;
+}
+
+/* Arrows on the timeline */
+.container::before {
+    content: " ";
+    height: 0;
+    top: 3vh;
+    width: 0;
+    z-index: 1;
+    border: medium solid blue;
+    border-width: 10px 10px 0px 10px;
+    border-color: blue transparent transparent transparent;
+}
+
+.container {
+    margin: 2vh 0 0 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h3, .container h6 {
+    margin: 1vh;
+    color: rgb(182, 182, 182);
+}
+
+.container h3:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.container h6 {
+    margin: 0 1vh;
+    text-align: center;
+}
+
+/*
+img {
+    height: 30vh;
+    width: 20vh;
+}*/
+
+.daysofcode img {
+    margin: 1vh;
+}
+
+.daysofcode p {
+    margin: 0;
+}
+
+.daysofcode a {
+    text-decoration: none;
+    color: rgb(182, 182, 182);  
+}
+
+.daysofcode a:hover {
+    color: orange;
+}
+
+.twitter-img {
+    height: 40vh;
+    width: 60vh;
+    float: right;
+}
+
+.google-img, .microsoft-img {
+    height: 60vh;
+    width: 45vh;
+}
+
+
+
+
+
+
+
+
+/*projects*/
+#projects-content {
+    flex-direction: row;
+}
+
+#projects-content h2 {
+    margin: 0;
+    color: blue;
+}
+
+#projects-content h2:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+#projects-content h6 {
+    margin-top: 0;
+}
+
+.projects-name {
+    padding-right: 20px;
+    flex-basis: 25%;
+    border-right: blue solid 3px;
+    color: rgb(182, 182, 182); 
+}
+
+.projects-name p {
+    color: rgb(182, 182, 182); 
+}
+
+.projects-info {
+    padding-left: 40px; 
+    flex-basis: 75%;
+}
+
+.a-project {
+    height: 23.6vh;
+    margin: 3vh 0 6vh 0;
+}
+
+.a-project ul {
+    margin-top: 0;
+}
+
+.a-project p {
+    margin-bottom: 0;
+}
+
+.a-project ul > li {
+    list-style: none;
+    text-indent: -15px;
+}
+
+.a-project ul > li:before {
+    content: "- ";
+    text-indent: -5px;
+}
+
+/*blog*/
+#thoughts-content {
+    flex-direction: column-reverse;
+}
+
+.thoughtsrow {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.col {
+    padding: 1vh;
+    margin: 1vh;
+    border: blue 3px solid;
+    height: 15vh;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col:hover {
+    cursor: pointer;
+}
+
+.back-button {
+    position: fixed;
+    top: 15vh;
+    left: 3vh;
+}
+
+.back-button:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+/*creative*/
+#creative-navbar {
+    visibility: hidden;
+}
+
+#creative-home {
+    visibility: visible;
+}
+
+#projects-content{
+    height: auto;
+}
