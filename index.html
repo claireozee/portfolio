@@ -7,99 +7,26 @@
 </head>
 
 <body class="homebody">
-    <div class="navbar">
-        <div class="navcontent">
-            <h1 class="navname"><a href="index.html" class="backhome">Claire Ozee</a></h1>
-            <div class="navlinks">
-                <a href="experience.html">Experience</a>
-                <a href="projects.html">Projects</a>
-                <a href="blog.html">Blog</a>
-            </div>
-        </div>
-    </div>
     <div class="content" id="home-content">
         <div class="landing name">
             <h1>Claire Ozee</h1>
-            <button class="to-about">About</button>
         </div>
-        <div class="landing about">
-            <div class="about-top-col">
-                <div class="about-left">
-                    <img src="/static/images/intern.JPG" class="intern-img"><br/>
-                </div>
-                <div class="about-right">
-                    <p>Mathematics student</p>
-                    <p>Exploring opportunities within the tech industry</p>
-                    <p>With a creative interest <a href="creative.html" id="to-creative">here</a></p>
-                    <p>maths / coding faded into background somehow..</p>
-                </div>
-            </div>
-            <button class="to-site">Enter</button>
+        <div class="landing about-summary">
+            <p>Mathematics student</p>
+            <p>/</p>
+            <p>web developer tech something</p>
+            <p>/</p>
+            <p>With a creative interest <a href="creative.html" id="to-creative">here</a></p>
         </div>
+        <button class="landing to-site"><a href="index1.html">Enter</a></button>
     </div>
-    <div class="footer" class="fadeup">
-         <div class="footercontent">
-            <i class="fab fa-instagram fa-2x"><a href="https://instagram.com/ozee.jpg/" target="_blank"></a></i>
-    
-            <i class="fab fa-linkedin fa-2x"><a href="https://linkedin.com/in/claireozee" target="_blank"></a></i>
-    
-            <i class="fab fa-github fa-2x"><a href="https://github.com/claireozee" target="_blank"></a></i>
-    
-            <i class="far fa-envelope fa-2x"></i>
-        </div>
-        <p id="copyright"><small><small>© Ozee 2020</small></small></p>
-    </div>
-<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
-<script src="https://kit.fontawesome.com/ace997583a.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="three.r95.min.js"></script>
-<script src="../static/js/vanta.waves.min.js"></script>
-<script>
-VANTA.WAVES({
-  el: ".homebody",
-  mouseControls: true,
-  touchControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x9b9b9b,
-  shininess: 0.00,
-  waveHeight: 10.50,
-  waveSpeed: 1.10,
-  zoom: 0.97
-})
-</script>
 <script>
     $(document).ready(function() {
-        $('.backhome').css("display", "none");
-        $('.navbar').css("display", "none");    
-        $('.footer').css("display", "none");
-        $('.name').hide();
-        $('.about').hide();
-        
-        //to appear after a few seconds
-        $('.name').delay(1000).fadeIn(300);
-
-        $('.to-about').click(function() {
-            $('.name').hide();
-            $('.about').show();
-        });
-        $('.to-site').click(function() {
-            $('.about').hide();
-            $('.backhome').fadeIn(800);
-            $('.navbar').fadeIn(800);  //.slideDown(1000);
-            $('.footer').fadeIn(800);  //.slideDown(1000);
-        });
+        $('.landing').hide();
+        $('.landing').delay(1000).fadeIn(300); //to appear after a few seconds
     });
 </script>
 </body>
 </html>
-<!-- https://codepen.io/Stockin/pen/mzydLz
-https://freefrontend.com/css-social-media-icons/ 
-https://toyfight.co/work/open-continents/
-https://hsbello.com/twitter-redesign
-https://tobiasahlin.com/moving-letters/
-https://css-irl.info/variable-font-animation-with-css-and-splitting-js/
-https://vincentgarreau.com/particles.js/-->
