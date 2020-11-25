@@ -1,8 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
 body {
-
     font-family: Raleway, Arial, Helvetica, sans-serif;
     margin: 0;
+}
+
+p {
+    color: black;
 }
 
 a, a:visited {
@@ -10,7 +13,17 @@ a, a:visited {
     color: rgb(183, 183, 183); 
 }
 
-/*index0*/
+a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+}
+
+a:active {
+    color: red;
+}
+
+
+/*index*/
 .homebody{
     box-shadow: inset 0px -140px 100px -100px  rgb(186, 186, 186);
     height: 100vh;
@@ -51,12 +64,12 @@ a, a:visited {
 }
 
 #home-content button:hover {
-    border: 2px solid blue;
+    border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
 }
 
 #home-content button:hover > a {
-    color: blue;
+    color: black;
 }
 
 #home-content button:active, button:visited {
@@ -66,6 +79,7 @@ a, a:visited {
 #home-content button:active > a {
     color: red;
 }
+
 
 
 
@@ -84,14 +98,8 @@ CHECK ALL THIS*/
     background-color: rgb(255, 255, 255); 
     box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
     position: relative; /* bottom of styling for everything to show - why?*/
-}
-
-.socials {
-    border: solid 2px rosybrown;
-    padding: 100px;
-    /*perspective: 500px;
-    transform-style: preserve-3d;
-    transform: rotateX(45deg);*/
+    bottom: 0;
+    height: 8vh;
 }
 
 /*icons*/
@@ -121,9 +129,7 @@ CHECK ALL THIS*/
     margin: 0;
 }
 
-p {
-    color: black;
-}
+
 
 /*nav*/
 .navbar {
@@ -187,8 +193,14 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}*/
 }
-
+.navbar {
+    top: 0;
+}
+.footer {
+    bottom: 0;
+}
 /*experience*/
 .timeline {
     overflow-x: scroll;
