@@ -24,8 +24,8 @@ a:active {
 
 
 /*index*/
-.homebody{
-    box-shadow: inset 0px -140px 100px -100px  rgb(186, 186, 186);
+.homebody {
+    box-shadow: inset 0px -140px 100px -100px  rgb(20, 20, 20);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -54,6 +54,8 @@ a:active {
 .about-summary p {
     margin: 2vw;
     text-align: center;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
 }
 
 #home-content button {
@@ -61,6 +63,8 @@ a:active {
     padding: 1vh;
     background-color: transparent;
     border: 2px solid rgba(183, 183, 183);
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
 }
 
 #home-content button:hover {
@@ -95,11 +99,14 @@ CHECK ALL THIS*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgb(255, 255, 255); 
-    box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
-    position: relative; /* bottom of styling for everything to show - why?*/
+    box-shadow: 0px 0px 100px 0px rgb(80, 80, 80);/*rgba(183, 183, 183);*/
     bottom: 0;
-    height: 8vh;
+    position: relative; /* bottom of styling for everything to show - why?*/
+    /*height: 8vh;*/
+    padding: 1vh;
+    font-variant: small-caps;
 }
 
 /*icons*/
@@ -135,12 +142,13 @@ CHECK ALL THIS*/
 .navbar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);   
-    box-shadow: 0px 0px 100px 0px rgba(183, 183, 183);
+    box-shadow: 0px 0px 100px 0px rgb(143, 143, 143);
     height: 10vh;
     padding: 1vh;
-    position: relative; /*for box shadow to show*/
+    /*position: relative; /*for box shadow to show*/
 }
 
 .navcontent {
@@ -153,6 +161,7 @@ CHECK ALL THIS*/
 .navlinks a, #to-creative {
     text-decoration: none;
     color: rgb(182, 182, 182);  
+    text-transform: uppercase;
 }
 
 .navlinks a {
