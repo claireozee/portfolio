@@ -214,10 +214,11 @@ previously height was included but removed*/
     padding: 1vh;
     width: 80%;
     height: 70%;
+    border: yellow 3px solid;
 }
 
 .tl-content {
-    border: red 1px solid;
+    border: red 3px solid;
 }
 
 /* The actual timeline (the horizontal ruler) */
@@ -343,6 +344,7 @@ img {
 .a-project {
     height: 23.6vh;
     margin: 3vh 0 6vh 0;
+    border: rgb(255, 77, 107) 3px solid
 }
 
 .a-project ul {
