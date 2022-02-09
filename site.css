@@ -258,7 +258,7 @@ previously height was included but removed*/
 .container h3:hover {
     color: blue;
     cursor: pointer;
-}
+} 
 
 .container h6 {
     margin: 0 1vh;
