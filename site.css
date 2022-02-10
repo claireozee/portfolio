@@ -3,51 +3,54 @@ body {
     font-family: Raleway, Arial, Helvetica, sans-serif;
     margin: 0;
 }
-
 p {
     color: black;
 }
-
 a, a:visited {
     text-decoration: none;
     color: rgb(183, 183, 183); 
 }
-
 a:hover, .backhome:hover {
     text-decoration: none;
     color: rgb(0, 0, 0); 
     font-weight: bold;
 }
-
 a:active {
     color: blue;
 }
 
-
 /*index*/
+.content { /*for all pages but fits experience*/
+    padding: 9vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .homebody {
     box-shadow: inset 0px -140px 100px -100px  rgb(20, 20, 20);
     height: 100vh;
+}
+.homebody-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
 }
 
+/*
 .landing {
     padding: 1vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 /*CHECKKKK these two*/
 .navbar-index {
     align-items: flex-start;
-}
-
-.footer-index {
-    align-items: flex-end;
+    top: 0;
 }
 
 .name h1 {
@@ -144,17 +147,11 @@ CHECK ALL THIS*/
     border-bottom: 3px solid blue;
 }
 
-.content { /*for all pages but fits experience*/
-    padding: 9vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 
 /*footer*/
-.footer {
+.footer, #index1footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,15 +166,21 @@ CHECK ALL THIS*/
 }
 
 /*to keep footer at bottom of page with no content*/
-#index1footer {
+#index1footer, #navbar-index {
     position: fixed;
-    bottom: 0;
     width: 100%;
 }
-
+#index1footer {
+    bottom: 0;
+}
 #copyright {
     margin: 0;
 }
+
+
+
+
+
 
 /*FIX!*/
 

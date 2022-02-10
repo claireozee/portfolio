@@ -7,7 +7,7 @@
 </head>
 
 <body class="homebody">
-    <div class="navbar-index" style="display:none">
+    <div class="navbar navbar-index" >
         <div class="navcontent">
             <h1 class="navname"><a href="index.html" class="backhome">Claire Ozee</a></h1>
             <div class="navlinks">
@@ -17,6 +17,8 @@
             </div>
         </div>
     </div>
+    <div class="homebody-content">
+    
     <div class="content" id="home-content">
         <div class="landing name">
             <h1>Claire Ozee</h1>
@@ -31,18 +33,20 @@
         <button class="landing to-site"><a href="index1.html">enter</a></button>
         <!--<button class="landing to-site"><a href="index1.html">enter</a>enter</button>-->
     </div>
-    <div class="footer-index" style="display:none">
+    </div>
+    <div class="footer-index" id="index1footer" >
         <div class="footercontent">
             <a href="https://instagram.com/ozee.jpg/" target="_blank"><upper>instagram</upper></a><a>  -  </a>
             <a href="https://linkedin.com/in/claireozee" target="_blank">linkedin</a>
        </div>
        <p id="copyright"><small><small>© Ozee 2020</small></small></p>
     </div>
+    <!-- $('.navbar-index').hide();
+        $('.footer-index').hide();-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('.navbar-index').hide();
-        $('.footer-index').hide();
+       
         $('.landing').hide();
         $('.landing').delay(1000).fadeIn(300); //to appear after a few seconds
         $('.landing to-site').click(function() {
