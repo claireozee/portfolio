@@ -41,6 +41,15 @@ a:active {
     justify-content: center;
 }
 
+/*CHECKKKK*/
+.navbar-index {
+    align-items: flex-start;
+}
+
+.footer-index {
+    align-items: flex-end;
+}
+
 .name h1 {
     font-size: 12vw;
     margin-top: 0;
