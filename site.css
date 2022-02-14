@@ -35,12 +35,13 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    position: absolute;
+    height: 100%;
+    /*position: absolute; delete*/
 }
 .navbar-index {
     top: 0;
-    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 /*CHECKKKK*/

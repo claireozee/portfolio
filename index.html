@@ -30,7 +30,8 @@
             <!--<p>/</p>
             <p>with a creative interest <a href="creative.html">here</a></p>-->
         </div>
-        <button class="landing to-site"><a href="index1.html">enter</a></button>
+        <!--<button class="enter-button"><a href="index1.html">enter(delete)</a></button>-->
+        <button class="landing enter-button">enter</button>
         <!--<button class="landing to-site"><a href="index1.html">enter</a>enter</button>-->
     </div>
     </div>
@@ -41,20 +42,19 @@
        </div>
        <p id="copyright"><small><small>© Ozee 2020</small></small></p>
     </div>
-    <!-- $('.navbar-index').hide();
-        $('.footer-index').hide();-->
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
-       
+        $('.navbar-index').hide();
+        $('.footer-index').hide();
         $('.landing').hide();
         $('.landing').delay(1000).fadeIn(300); //to appear after a few seconds
-        $('.landing to-site').click(function() {
-            $('.navbar-index').show();
-            $('.footer-index').show();
+        $('.enter-button').click(function() {
+            $('#home-content').hide();
+            $('.navbar-index').fadeIn(300).show();
+            $('.footer-index').fadeIn(300).show();
         });
-        
-    
     });
 </script>
 </body>
