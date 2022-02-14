@@ -7,7 +7,7 @@
 </head>
 
 <body class="homebody">
-    <div class="navbar navbar-index" >
+    <div class="navbar navbar-index" style="visibility:hidden">
         <div class="navcontent">
             <h1 class="navname"><a href="index.html" class="backhome">Claire Ozee</a></h1>
             <div class="navlinks">
@@ -19,7 +19,7 @@
     </div>
     <div class="homebody-content">
     
-    <div class="content" id="home-content">
+    <div class="content" id="home-content" style="visibility:hidden">
         <div class="landing name">
             <h1>Claire Ozee</h1>
         </div>
@@ -35,7 +35,7 @@
         <!--<button class="landing to-site"><a href="index1.html">enter</a>enter</button>-->
     </div>
     </div>
-    <div class="footer-index" id="index1footer" >
+    <div class="footer-index" id="index1footer" style="visibility:hidden">
         <div class="footercontent">
             <a href="https://instagram.com/ozee.jpg/" target="_blank"><upper>instagram</upper></a><a>  -  </a>
             <a href="https://linkedin.com/in/claireozee" target="_blank">linkedin</a>
@@ -46,10 +46,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('.navbar-index').hide();
-        $('.footer-index').hide();
+        
         $('.landing').hide();
-        $('.landing').delay(1000).fadeIn(300); //to appear after a few seconds
+        $('.landing').delay(1000).css('visibility', 'visible').fadeIn(300);  //to appear after a few seconds
         $('.enter-button').click(function() {
             $('#home-content').hide();
             $('.navbar-index').fadeIn(300).show();
