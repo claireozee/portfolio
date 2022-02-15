@@ -23,21 +23,21 @@
                 <h6>Nov 2019</h6>
             </div>
             <div class="container c2">
-                <h3 class="hackgirlsummer-name">Hack Girl Summer</h3>
-                <h6>Jun 2020</h6>
-            </div>
-            <div class="container c3" style="display: none">
-                <h3 class="siliconvalley-name">Silicon Valley</h3>
+                <h3 class="qmcs-name">Coding Society</h3>
                 <h6>Sep 2020</h6>
             </div>
+            <div class="container c3">
+                <h3 class="lseg-name">London Stock Exchange</h3>
+                <h6>Jun 2021</h6>
+            </div>
             <div class="container c4" style="display: none">
-                <h3 class="EXPERIENCEFOUR-name">EXPERIENCE FOUR</h3>
+                <h3 class="daysofcode2-name">#100DaysOfCode2.0</h3>
                 <h6>DATE 2020</h6>
             </div>
         </div>
         <div class="timeline-content">
-            <div class="tl-content daysofcode">
-                <h2>#100DaysOfCode</h2>
+            <div class="tl-content daysofcode" style="display:none">
+                <h2 class="daysofcode">#100DaysOfCode</h2>
                 <img src="/static/images/twitter.jpeg" class="twitter-img"><br/>
                 <p><a href='https://codefirstgirls.org.uk/' target="_blank">CodeFirst: Girls</a>' web development courses was where I had my first introduction itnto the tech industry.<br/>
 
@@ -62,8 +62,8 @@
                 <img src="/static/images/google.jpeg" class="google-img"><br/>
                 <img src="/static/images/microsoft.jpeg" class="microsoft-img">
             </div>
-            <div class="tl-content hackgirlsummer" style="display: none">
-                <h2>Hack Girl Summer Hackathon</h2>
+            <div class="tl-content qmcs" style="display: none">
+                <h2 class="qmcs">Coding Society</h2>
                 <p>Student hackathon</p><br/>
                 <p>Student hackathon</p><br/>
                 <p>Student hackathon</p><br/>
@@ -74,19 +74,20 @@
                 <p>Student hackathon</p><br/>
                 <p>Student hackathon</p><br/>
             </div>
-            <div class="tl-content siliconvalley" style="display: none">
-                <h2>Silicon Valley</h2>
-                <p>san fran babyyy</p><br/>
-                <p>san fran babyyy</p><br/>
-                <p>san fran babyyy</p><br/>
-                <p>san fran babyyy</p><br/>
-                <p>san fran babyyy</p><br/>
-                <p>san fran babyyy</p><br/>
-                <p>san fran babyyy</p><br/>
-                <p>san fran babyyy</p><br/>
+            <div class="tl-content lseg" style="display: none">
+                <h2 class="lseg">The London Stock Exchange</h2>
+                <p>ml babyyy</p><br/>
+                <p>ml babyyy</p><br/>
+                <p>ml babyyy</p><br/>
+                <p>ml babyyy</p><br/>
+                <p>ml babyyy</p><br/>
+                <p>ml babyyy</p><br/>
+                <p>ml babyyy</p><br/>
+                <p>ml babyyy</p><br/>
+                <p>ml babyyy</p><br/>
             </div>
-            <div class="tl-content EXPERIENCEFOUR" style="display: none">
-                <h2>EXPERIENCE FOUR</h2>
+            <div class="tl-content daysofcode2" style="display: none">
+                <h2 class="daysofcode2">#100DaysOfCode2.0</h2>
                 <p>experience four</p><br/>
                 <p>experience four</p><br/>
                 <p>experience four</p><br/>
@@ -100,11 +101,7 @@
        </div>
        <p id="copyright"><small><small>© Ozee 2020</small></small></p>
     </div>
-<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
-<script src="https://kit.fontawesome.com/ace997583a.js"></script>
-<script>
-    $(document).ready(function() {
+    <!--$(document).ready(function() {
         $('.tl-content').hide();  
         $('.daysofcode-name').click(function() {
             $('.daysofcode').fadeIn("fast");
@@ -131,12 +128,37 @@
         });
 
         //not to reopen when content is already showing
-
-
-
-
+    });-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.daysofcode-name').click(function() {
+            $('.daysofcode').css('display', 'inblock');
+            $('.qmcs').css('display', 'none');
+            $('.lseg').css('display', 'none');
+        });
+        $('.qmcs-name').click(function() {
+            $('.daysofcode').css('display', 'none');
+            $('.qmcs').css('display', 'inblock');
+            $('.lseg').css('display', 'none');
+        });
+        $('.lseg-name').click(function() {
+            $('.daysofcode').css('display', 'none');
+            $('.qmcs').css('display', 'none');
+            $('.lseg').css('display', 'inblock');
+        });
     });
+        //$('.landing').hide(); // makes fade smooth 
+        //$('.landing').delay(700).css('visibility', 'visible').fadeIn(300);  //to appear after a few seconds
+        //$('.enter-button').click(function() {
+          //  $('#home-content').fadeOut(200);
+            //$('.navbar-index').css('visibility', 'visible', 300);
+            //$('.footer-index').css('visibility', 'visible');
+        //});
+    //});
+    
     
 </script>
+
 </body>
 </html>
