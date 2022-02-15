@@ -123,6 +123,11 @@ a:active {
 #index1footer {
     bottom: 0;
 }
+.experiencefooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 #copyright {
     margin: 0;
 }
@@ -154,6 +159,7 @@ a:active {
     width: 80%;
     height: 70%;
     border: black 3px solid;
+    margin-top: 5%;
 }
 
 .tl-content {

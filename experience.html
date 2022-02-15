@@ -94,7 +94,7 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer experiencefooter">
         <div class="footercontent">
             <a href="https://instagram.com/ozee.jpg/" target="_blank"><upper>instagram</upper></a><a>  -  </a>
             <a href="https://linkedin.com/in/claireozee" target="_blank">linkedin</a>
@@ -136,16 +136,19 @@
             $('.daysofcode').css('display', 'inblock');
             $('.qmcs').css('display', 'none');
             $('.lseg').css('display', 'none');
+            $('.experiencefooter').css('position', 'relative'); //footer goes to bottom of page and doesn't remain fixed
         });
         $('.qmcs-name').click(function() {
             $('.daysofcode').css('display', 'none');
             $('.qmcs').css('display', 'inblock');
             $('.lseg').css('display', 'none');
+            $('.experiencefooter').css('position', 'relative');
         });
         $('.lseg-name').click(function() {
             $('.daysofcode').css('display', 'none');
             $('.qmcs').css('display', 'none');
             $('.lseg').css('display', 'inblock');
+            $('.experiencefooter').css('position', 'relative');
         });
     });
         //$('.landing').hide(); // makes fade smooth 
