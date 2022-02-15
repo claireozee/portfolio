@@ -19,14 +19,15 @@ a:active {
     color: blue;
 }
 
-/*index*/
-.content { /*for all pages but fits experience*/
+.content { 
     padding: 9vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
+/* index */
 .homebody {
     box-shadow: inset 0px -140px 100px -100px  rgb(20, 20, 20);
     height: 100vh;
@@ -36,32 +37,21 @@ a:active {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    /*position: absolute; delete*/
 }
-.navbar-index {
-    top: 0;
-    position: fixed;
-    width: 100%;
-}
-
-/*CHECKKKK*/
 .name h1 {
     font-size: 12vw;
     margin-top: 0;
     margin-bottom: 0vh;
 }
-
 .about-summary {
     display: flex;
     flex-direction: row;
 }
-
 .about-summary p {
     margin: 2vw;
     text-align: center;
     font-variant: small-caps;
 }
-
 #home-content button {
     margin-top: 10vh;
     padding: 1vh;
@@ -69,34 +59,21 @@ a:active {
     border: 2px solid rgba(183, 183, 183);
     font-variant: small-caps;
 }
-
 #home-content button:hover {
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
 }
-
 #home-content button:hover > a {
     color: black;
 }
-
 #home-content button:active, button:visited {
     border: 2px solid blue;
 }
-
 #home-content button:active > a {
     color: blue;
 }
 
-
-
-
-
-
-
-/*home/index1
-CHECK ALL THIS*/
-
-/*nav*/
+/* nav & footer */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -105,44 +82,30 @@ CHECK ALL THIS*/
     background-color: rgb(255, 255, 255);   
     box-shadow: 0px 0px 100px 0px rgb(143, 143, 143);
 }
-
 .navcontent {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.navlinks a, #to-creative {
+.navlinks a {
     text-decoration: none;
     color: rgb(182, 182, 182);  
     text-transform: uppercase;
-}
-
-.navlinks a {
     padding: 0 1.2vh;
     margin: 0 1vh;
 }
-
-.navlinks a:hover, #to-creative:hover {
+.navlinks a:hover {
     color: black;
 }
-
-.navlinks a:active, #to-creative:active {
+.navlinks a:active {
     color: blue;
 }
-
 .navname {
     margin: 1vh;
 }
-
 .nav-active {
     border-bottom: 3px solid blue;
 }
-
-
-
-
-/*footer*/
 .footer, #index1footer {
     display: flex;
     flex-direction: column;
@@ -151,14 +114,9 @@ CHECK ALL THIS*/
     box-shadow: 0px 0px 100px 0px rgb(80, 80, 80);/*rgba(183, 183, 183);*/
     padding: 1vh;
     font-variant: small-caps; 
-    /*
-    position: fixed;
-    bottom: 0;
-    width: 100%;*/
 }
-
 /*to keep footer at bottom of page with no content*/
-#index1footer, #navbar-index {
+#index1footer, .navbar-index {
     position: fixed;
     width: 100%;
 }
