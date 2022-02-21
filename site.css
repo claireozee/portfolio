@@ -14,6 +14,7 @@ a:hover, .backhome:hover {
     text-decoration: none;
     color: rgb(0, 0, 0); 
     font-weight: bold;
+    cursor: pointer;
 }
 a:active {
     color: blue;
@@ -202,7 +203,7 @@ a:active {
 
 
 
-/*
+/*CHECK
 img {
     height: 30vh;
     width: 20vh;
@@ -249,10 +250,14 @@ img {
 
 
 /*projects*/
+#project-summary {
+    padding: 10vh;
+    padding-bottom: 0;
+    margin: 0;
+}
 #projects-content {
     flex-direction: row;
     align-items: inherit;
-    padding-top: 5vh;
 }
 
 #projects-content h2 {
@@ -260,10 +265,7 @@ img {
     color: blue;
 }
 
-#projects-content h2:hover {
-    color: orange;
-    cursor: pointer;
-}
+
 
 #projects-content h6 {
     margin-top: 0;
