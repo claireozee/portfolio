@@ -346,10 +346,7 @@ img {
     left: 3vh;
 }
 
-.back-button:hover {
-    cursor: pointer;
-    color: blue;
-}
+
 
 /*creative*/
 #creative-navbar {
