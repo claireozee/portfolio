@@ -30,9 +30,9 @@
                 <h3 class="lseg-name">London Stock Exchange</h3>
                 <h6>Jun 2021</h6>
             </div>
-            <div class="container c4" style="display: none">
+            <div class="container c4">
                 <h3 class="daysofcode2-name">#100DaysOfCode2.0</h3>
-                <h6>DATE 2020</h6>
+                <h6>Mar 2022</h6>
             </div>
         </div>
         <div class="timeline-content">
@@ -131,18 +131,28 @@
             $('.daysofcode').css('display', 'inblock');
             $('.qmcs').css('display', 'none');
             $('.lseg').css('display', 'none');
+            $('.daysofcode2').css('display', 'none');
             $('.experiencefooter').css('position', 'relative'); //footer goes to bottom of page and doesn't remain fixed
         });
         $('.qmcs-name').click(function() {
             $('.daysofcode').css('display', 'none');
             $('.qmcs').css('display', 'inblock');
             $('.lseg').css('display', 'none');
+            $('.daysofcode2').css('display', 'none');
             $('.experiencefooter').css('position', 'relative');
         });
         $('.lseg-name').click(function() {
             $('.daysofcode').css('display', 'none');
             $('.qmcs').css('display', 'none');
             $('.lseg').css('display', 'inblock');
+            $('.daysofcode2').css('display', 'none');
+            $('.experiencefooter').css('position', 'relative');
+        });
+        $('.daysofcode2-name').click(function() {
+            $('.daysofcode').css('display', 'none');
+            $('.qmcs').css('display', 'none');
+            $('.lseg').css('display', 'none');
+            $('.daysofcode2').css('display', 'inblock');
             $('.experiencefooter').css('position', 'relative');
         });
     });
