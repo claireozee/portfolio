@@ -116,7 +116,7 @@ a:active {
     padding: 1vh;
     font-variant: small-caps; 
 }
-/*to keep footer at bottom of page with no content*/
+
 #index1footer, .navbar-index {
     position: fixed;
     width: 100%;
@@ -124,15 +124,11 @@ a:active {
 #index1footer {
     bottom: 0;
 }
-.experiencefooter {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+
 #copyright {
     margin: 0;
 }
-
+ 
 
 
 
