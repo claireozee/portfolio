@@ -19,9 +19,9 @@
     <div class="content" id="experience-content">
         <div class="contendor">
             <form>
-                <input type="radio" class="form-op">
-                <input type="radio" class="form-op">
-                <input type="radio" class="form-op">
+                <input type="radio" class="form-op" id="ex3">
+                <input type="radio" class="form-op" id="ex2">
+                <input type="radio" class="form-op" id="ex1">
             </form>
 
         </div>
@@ -187,6 +187,23 @@
             $('.lseg').css('display', 'none');
             $('.daysofcode2').css('display', 'inblock');
             $('.experiencefooter').css('position', 'relative');
+        });
+
+
+        $('#e3').click(function() {
+            $('.e2').css('display', 'none');
+            $('.e1').css('display', 'none');
+            $('.e3').css('display', 'inblock'); //NOT WORKING!
+        });
+        $('#ex2').click(function() {
+            $('.e3').css('display', 'none');
+            $('.e1').css('display', 'none');
+            $('.e2').css('display', 'inblock');
+        });
+        $('#ex1').click(function() {
+            $('.e3').css('display', 'none');
+            $('.e2').css('display', 'none');
+            $('.e1').css('display', 'inblock');
         });
     });
         //$('.landing').hide(); // makes fade smooth 

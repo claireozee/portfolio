@@ -152,7 +152,7 @@ a:active {
     display: inline-flex;
     flex-direction: column;
     position: fixed;
-    height: 30vh;
+    height: 100vh;
     justify-content: center;
     left: 3vh;
 }
@@ -160,7 +160,7 @@ a:active {
 .form-op {
     margin: 1.5vh;
 }
-
+/*need to make form vertically aligned in centre*/
 
 
 .timeline {
