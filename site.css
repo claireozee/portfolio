@@ -195,6 +195,11 @@ a:active {
     margin: 0 1vh;
 }
 
+/*not working, check code to add space between divs*/
+.experience-here {
+    margin: 10vh 0;
+}
+
 
 
 
