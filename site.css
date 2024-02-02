@@ -20,13 +20,14 @@ a:active {
     color: blue;
 }
 
+
 .content { 
     padding: 10vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
+}*/
 
 /* index */
 .homebody {
@@ -117,11 +118,12 @@ a:active {
     font-variant: small-caps; 
 }
 
-#index1footer, .navbar-index {
+#index1footer, .navbar-index, .experiencefooter {
     position: fixed;
     width: 100%;
 }
-#index1footer {
+#index1footer, .experiencefooter {
+    position: fixed;
     bottom: 0;
 }
 
@@ -212,10 +214,11 @@ a:active {
     margin: 0 1vh;
 }
 
-/*not working, check code to add space between divs*/
 .experience-here {
     margin: 10vh 0;
+    background-color: red;
 }
+
 
 
 
