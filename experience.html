@@ -101,7 +101,8 @@
                 <p>experience four</p><br/>
             </div>
         </div>
-        <!--content here, restructuring how the content is laid out-->
+        <!--content here, restructuring how the content is laid out
+        style="display: none">-->
         <div class="experience-here e3" style="display: none">
             <h2>#100DaysOfCode</h2>
             <p>Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. </p>
@@ -174,36 +175,32 @@
             $('.daysofcode2').css('display', 'none');
             $('.experiencefooter').css('position', 'relative');
         });
-        $('.lseg-name').click(function() {
-            $('.daysofcode').css('display', 'none');
-            $('.qmcs').css('display', 'none');
-            $('.lseg').css('display', 'inblock');
-            $('.daysofcode2').css('display', 'none');
-            $('.experiencefooter').css('position', 'relative');
-        });
-        $('.daysofcode2-name').click(function() {
-            $('.daysofcode').css('display', 'none');
-            $('.qmcs').css('display', 'none');
-            $('.lseg').css('display', 'none');
-            $('.daysofcode2').css('display', 'inblock');
-            $('.experiencefooter').css('position', 'relative');
-        });
 
 
+        $('.experience-here').hide();  
         $('#e3').click(function() {
-            $('.e2').css('display', 'none');
-            $('.e1').css('display', 'none');
-            $('.e3').css('display', 'inblock'); //NOT WORKING!
+            //$('.e2').css('display', 'none');
+            //$('.e1').css('display', 'none');
+           // $('.e3').css('display', 'inblock'); //NOT WORKING!
+            $('.e2').fadeOut("fast");
+            $('.e1').fadeOut("fast");
+            $('.e3').fadeIn("fast");
         });
         $('#ex2').click(function() {
             $('.e3').css('display', 'none');
             $('.e1').css('display', 'none');
-            $('.e2').css('display', 'inblock');
+            //$('.e2').css('display', 'inblock');
+            //$('.e3').fadeOut("fast");
+            //$('.e1').fadeOut("fast");
+            $('.e2').fadeIn("fast");
         });
         $('#ex1').click(function() {
-            $('.e3').css('display', 'none');
-            $('.e2').css('display', 'none');
-            $('.e1').css('display', 'inblock');
+           $('.e3').css('display', 'none');
+           $('.e2').css('display', 'none');
+            //$('.e1').css('display', 'inblock');
+            //$('.e3').fadeOut("slow");
+            //$('.e2').fadeOut("slow");
+            $('.e1').fadeIn("slow");
         });
     });
         //$('.landing').hide(); // makes fade smooth 
