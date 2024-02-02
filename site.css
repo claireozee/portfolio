@@ -138,6 +138,23 @@ a:active {
 
 
 /*experience*/
+.contendor form{
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    position: fixed;
+    height: 30vh;
+    justify-content: center;
+    left: 3vh;
+}
+
+.form-op {
+    margin: 1.5vh;
+}
+
+
+
 .timeline {
     /*overflow-x: scroll;*/
     padding: 1vh;
