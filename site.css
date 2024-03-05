@@ -9,7 +9,7 @@ p {
 a, a:visited {
     text-decoration: none;
     color: rgb(183, 183, 183); 
-}
+} 
 a:hover, .backhome:hover {
     text-decoration: none;
     color: rgb(0, 0, 0); 
@@ -221,8 +221,7 @@ a:active {
 }
 
 .experience-here {
-    margin: 10vh 0;
-    background-color: red;
+    background-color: blueviolet;
 }
 
 
