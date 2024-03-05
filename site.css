@@ -128,7 +128,6 @@ a:active {
 }
  
 
-/*FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! */
 /* experience */
 .contendor form{
     box-sizing: border-box;
@@ -138,7 +137,7 @@ a:active {
     position: fixed;
     height: 100%;
     justify-content: center;
-    left: 3vh;
+    left: 2vh;
     top: 0;
 }
 .form-op {
@@ -170,28 +169,7 @@ a:active {
 .tt3:hover .ex3-tt3 {
     visibility: visible;
 }
- 
-
-/* ? */
-.container {
-    margin: 2vh 0 0 5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.container h3, .container h6 {
-    margin: 1vh;
-    color: rgb(182, 182, 182);
-}
-.container h3:hover {
-    color: blue;
-    cursor: pointer;
-} 
-.container h6 {
-    margin: 0 1vh;
-}
-
+/* to delete */
 .experience-here {
     background-color: red;
 }
@@ -199,7 +177,8 @@ a:active {
 
 
 
-
+/*FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! */
+/* ? */
 
 /*CHECK
 img {
