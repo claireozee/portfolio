@@ -182,10 +182,18 @@ a:active {
     z-index: 1;
   }
   
-  .tooltip:hover .tooltiptext {
+  /*.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }*/
+
+  .tooltip:hover .tt1 {
     visibility: visible;
   }
 
+  #ex3:hover .tt3 {
+    visibility: visible;
+  }
+ 
 
 
 
