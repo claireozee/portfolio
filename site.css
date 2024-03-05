@@ -77,13 +77,18 @@ a:active {
 }
 
 /* nav & footer */
-.navbar {
+.navbar, .footer, #indexfooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(49, 49, 49);   
-    box-shadow: 0px 0px 100px 0px rgb(143, 143, 143);
+    /*background-color: rgb(49, 49, 49);   */
+    background-color: black;
+    box-shadow: 0px 0px 100px 0px rgb(145, 145, 145);
+}
+.footer, #indexfooter {
+    padding: 1vh;
+    font-variant: small-caps; 
 }
 .navcontent {
     display: flex;
@@ -109,16 +114,6 @@ a:active {
 .nav-active {
     border-bottom: 3px solid blue;
 }
-.footer, #index1footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(49, 49, 49);  
-    box-shadow: 0px 0px 100px 0px rgb(145, 145, 145);/*rgba(183, 183, 183);*/
-    padding: 1vh;
-    font-variant: small-caps; 
-}
-
 #index1footer, .navbar-index, .experiencefooter {
     position: fixed;
     width: 100%;
@@ -127,7 +122,6 @@ a:active {
     position: fixed;
     bottom: 0;
 }
-
 #copyright {
     margin: 0;
     color: rgb(145, 145, 145);
