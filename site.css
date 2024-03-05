@@ -163,6 +163,7 @@ a:active {
 /*need to make form vertically aligned in centre*/
 
 
+/* */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -181,16 +182,16 @@ a:active {
     position: absolute;
     z-index: 1;
   }
-  
-  /*.tooltip:hover .tooltiptext {
-    visibility: visible;
-  }*/
 
-  .tooltip:hover .tt1 {
+  .tt1:hover .ex1-tt1 {
     visibility: visible;
   }
 
-  #ex3:hover .tt3 {
+  .tt2:hover .ex2-tt2 {
+    visibility: visible;
+  }
+
+  .tt3:hover .ex3-tt3 {
     visibility: visible;
   }
  
