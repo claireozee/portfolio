@@ -228,7 +228,7 @@ img {
 
 /*projects*/
 
-
+/**/
 
 :root {
 	--light: #ffe6e6;
@@ -249,11 +249,9 @@ img {
 	justify-content: center;
 	align-items: center;
 
-	/*padding: 2rem 5rem;
-
-	width: 100%;*/
+	padding: 3rem;
 	height: 50vh;
-	background-image: var(--bg-color);*/
+	/*background-image: var(--bg-color);*/
 }
 
 .category_container {
@@ -269,7 +267,7 @@ img {
 	height: 100%;
 }
 
-.content {
+.project-content {
 	--active: 0;
 
 	cursor: pointer;
@@ -292,12 +290,12 @@ img {
 
 	transition: width 0.5s ease-in-out;
 }
-.content:hover {
+.project-content:hover {
 	--active: 1;
 
 	width: calc(70% - var(--gap));
 }
-.content::before {
+.project-content::before {
 	content: "";
 
 	position: absolute;
@@ -307,12 +305,12 @@ img {
 
 	width: 100%;
 	height: 100%;
-	background-color: var(--dark);
+	background-color: var(--dark);*/
 
 	opacity: 0.6;
 }
 
-.content img {
+.project-content img {
 	position: absolute;
 	z-index: -20;
 	top: 0;
@@ -325,7 +323,7 @@ img {
 	object-position: center;
 }
 
-.content .profile_image {
+.project-content .profile_image {
 	opacity: calc(1 - var(--active));
 
 	transition: opacity 0.3s ease-in-out;
@@ -375,7 +373,7 @@ img {
 
 
 
-
+/*
 //
 //	create an 'accordion' wrapper for the quote text 
 //	1 set initial height to zero fr  
@@ -393,7 +391,7 @@ img {
 //  add min-height 0 on the quote text to override the 
 // 	default max-content of fr - add a bit of individual
 //. animation for the quote (to not follow detail)
-// 
+// */
 .profile_quote { 
 	min-height: 0; 
 	transform: translateY(50%);
@@ -404,15 +402,15 @@ img {
 	;	
 }
 
-
+/*
 // 	expand (animated) wrapper row height to 1 fr
 //	(this will animate detail up when making room for quote)
-.content:hover .wrapper {
+.project-content:hover .wrapper {
   	grid-template-rows: 1fr;
 }
 
 // remove translate to male quote slide in 
-.content:hover .profile_quote {
+.project-content:hover .profile_quote {
 	transform: none;
 	opacity: 1;	
 }
@@ -427,6 +425,7 @@ img {
 dialog { position: absolute; z-index: 1; background: none; color: white; border: 0; font-size: .8rem; padding:.5em;}
 dialog a { color: whitesmoke; }
 
+*/
 
 
 
@@ -452,8 +451,7 @@ dialog a { color: whitesmoke; }
 
 
 
-
-
+/*
 #project-summary {
     padding: 10vh;
     padding-bottom: 0;
@@ -515,7 +513,7 @@ dialog a { color: whitesmoke; }
     content: "- ";
     text-indent: -5px;
 }
-
+*/
 
 
 
