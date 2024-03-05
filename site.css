@@ -139,14 +139,11 @@ a:active {
     height: 100%;
     justify-content: center;
     left: 3vh;
+    top: 0;
 }
 .form-op {
     margin: 1.5vh;
 }
-/*need to make form vertically aligned in centre*/
-
-
-
 .tooltip {
     position: relative;
     display: inline-block;
