@@ -152,7 +152,7 @@ a:active {
     display: inline-flex;
     flex-direction: column;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     left: 3vh;
 }
@@ -161,6 +161,33 @@ a:active {
     margin: 1.5vh;
 }
 /*need to make form vertically aligned in centre*/
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
 
 
 .timeline {
