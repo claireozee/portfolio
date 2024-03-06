@@ -130,9 +130,13 @@ a:active {
     color: rgb(145, 145, 145);
 }
  
+/* keep width of experience & projects page the same when content is shown */
+.contentbody {
+    width: 100vw;
+}
 
 /* experience */
-.contendor form{
+.contendor form {
     box-sizing: border-box;
     text-align: center;
     display: inline-flex;
@@ -182,12 +186,10 @@ a:active {
 
 /*FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! */
 /* ? */
-
-/*CHECK
-img {
+.resize-img {
     height: 30vh;
-    width: 20vh;
-}*/
+    width: auto;
+}
 
 img {
     height: auto;
