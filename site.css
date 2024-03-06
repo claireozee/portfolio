@@ -102,7 +102,7 @@ a:active {
     padding: 0 1.2vh;
     margin: 0 1vh;
 }
-.navlinks, .footer, #indexfooter a:hover {
+.navlinks, .footer, #indexfooter, a:hover {
     color: white;
 }
 .navlinks a:active {
