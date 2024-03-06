@@ -10,9 +10,9 @@ a, a:visited {
     text-decoration: none;
     color: rgb(183, 183, 183); 
 } 
-a:hover, .backhome:hover {
+a:hover/*, .backhome:hover*/ {
     text-decoration: none;
-    color: rgb(0, 0, 0); 
+    /*color: rgb(0, 0, 0); */
     font-weight: bold;
     cursor: pointer;
 }
@@ -110,6 +110,7 @@ a:active {
 }
 .navname {
     margin: 1vh;
+    color: white;
 }
 .nav-active {
     border-bottom: 3px solid blue;
