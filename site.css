@@ -375,7 +375,7 @@ img {
 
 
 
-/*
+
 //
 //	create an 'accordion' wrapper for the quote text 
 //	1 set initial height to zero fr  
@@ -404,7 +404,7 @@ img {
 	;	
 }
 
-/*
+
 // 	expand (animated) wrapper row height to 1 fr
 //	(this will animate detail up when making room for quote)
 .project-content:hover .wrapper {
@@ -435,87 +435,6 @@ dialog a { color: whitesmoke; }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#project-summary {
-    padding: 10vh;
-    padding-bottom: 0;
-    margin: 0;
-}
-#projects-content {
-    flex-direction: row;
-    align-items: inherit;
-}
-
-#projects-content h2 {
-    margin: 0;
-    color: blue;
-}
-
-
-
-#projects-content h6 {
-    margin-top: 0;
-}
-
-.projects-name {
-    padding-right: 20px;
-    flex-basis: 25%;
-    border-right: blue solid 3px;
-    color: rgb(182, 182, 182); 
-}
-
-.projects-name p {
-    color: rgb(182, 182, 182); 
-}
-
-.projects-info {
-    padding-left: 40px; 
-    flex-basis: 75%;
-}
-
-.a-project { 
-    height: 23.6vh;
-    margin: 3vh 0 6vh 0;
-    border: rgb(255, 77, 107) 3px solid;
-    display: inline-block;
-}
-
-.a-project ul {
-    margin-top: 0;
-}
-
-.a-project p {
-    margin-bottom: 0;
-}
-
-.a-project ul > li {
-    list-style: none;
-    text-indent: -15px;
-}
-
-.a-project ul > li:before {
-    content: "- ";
-    text-indent: -5px;
-}
-*/
 
 
 
