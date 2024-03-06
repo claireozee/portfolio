@@ -237,7 +237,7 @@ img {
 
 :root {
 	--light: #ffe6e6;
-	--dark: #0c0c0c;
+	--dark: rgba(0,0,0,0.7)
 }
 
 .container {
