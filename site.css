@@ -110,7 +110,7 @@ a:active {
 }
 .navname {
     margin: 1vh;
-    color: white;
+    color: rgb(182, 182, 182); 
 }
 .nav-active {
     border-bottom: 3px solid blue;
