@@ -359,8 +359,7 @@ img {
 }
 
 .profile_quote p {
-	font-size: 1.5rem;
-	font-weight: 600;
+	font-size: 1rem;
 	color: var(--light);
 
 	transform: translate(0, calc((1 - var(--active)) * (100% + 2.5rem)));
@@ -438,16 +437,14 @@ dialog a { color: whitesmoke; }
 
 
 
-/*blog*/
+/*blog*/ /*
 #thoughts-content {
     flex-direction: column-reverse;
 }
-
 .thoughtsrow {
     display: flex;
     flex-direction: row-reverse;
 }
-
 .col {
     padding: 1vh;
     margin: 1vh;
@@ -458,11 +455,9 @@ dialog a { color: whitesmoke; }
     align-items: center;
     justify-content: center;
 }
-
 .col:hover {
     cursor: pointer;
 }
-
 .back-button {
     position: fixed;
     top: 15vh;
@@ -470,16 +465,13 @@ dialog a { color: whitesmoke; }
 }
 
 
-
-/*creative*/
+/*creative*/ /*
 #creative-navbar {
     visibility: hidden;
 }
-
 #creative-home {
     visibility: visible;
 }
-
 #projects-content{
     height: auto;
 }
