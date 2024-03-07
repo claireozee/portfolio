@@ -176,55 +176,39 @@ a:active {
 .tt3:hover .ex3-tt3 {
     visibility: visible;
 }
-/* to delete */
-.experience-here {
-    border-style: dashed;
-}
-
-
-
 
 /*FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! */
-/* ? */
+/* 100 days of code */
 .resize-img {
     height: 30vh;
     width: auto;
 }
-
 img {
     height: auto;
     width: auto;
 }
-
 .daysofcode img {
     margin: 1vh;
 }
-
 .daysofcode p {
     margin: 0;
 }
-
 .daysofcode a {
     text-decoration: none;
     color: rgb(182, 182, 182);  
 }
-
 .daysofcode a:hover {
     color: orange;
 }
-
 .twitter-img {
     height: 40vh;
     width: 60vh;
     float: right;
 }
-
 .google-img, .microsoft-img {
     height: 60vh;
     width: 45vh;
 }
-
-
 
 
 /*projects*/
