@@ -461,7 +461,7 @@ dialog a { color: whitesmoke; }
 	 align-items: center;
 	 justify-content: center;
 	 overflow-x: hidden;
-     overflow-y: hidden;*/
+     overflow-y: hidden;
 }
 .swiper-wrapper {
 	 display: flex;
