@@ -510,7 +510,7 @@ dialog a { color: whitesmoke; }
 	 transform: translateY(0);
 }
  .swiper-button-prev, .swiper-button-next {
-	 background: rgba(255, 255, 255, 40);
+	 background: rgb(197, 41, 41);
 	 border-radius: 100%;
 	 padding: 1em;
 	 width: 0.5em;

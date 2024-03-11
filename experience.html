@@ -160,24 +160,43 @@ https://codepen.io/nikczemnydev/pen/WNmXjyL-->
            $('.e2').css('display', 'none');
             $('.e1').fadeIn("slow");
         });
-        $(".swiper").swiper({
-        loop: true,
-        slidesPerView: 3,
-        effect: "coverflow",
-        coverflowEffect: {
-        rotate: 20,
-        slideShadows: true
-            },
-        navigation: {
-            nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-            },
-        keyboard: {
-            enabled: true,
-            onlyInViewport: false
-        }
-        });
     });
+    var swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: 3,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 20,
+    slideShadows: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false
+  }
+});
+    //$(function() {
+    //    $(".swiper").swiper({
+      //      loop: true,
+    //        slidesPerView: 3,
+    //        effect: "coverflow",
+    //        coverflowEffect: {
+    //        rotate: 20,
+    //        slideShadows: true
+     //           },
+    //        navigation: {
+    //             nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev"
+    //             },
+    //         keyboard: {
+    //             enabled: true,
+    //             onlyInViewport: false
+    //         }
+    //     });
+    // });
 </script>
 
 </body>
