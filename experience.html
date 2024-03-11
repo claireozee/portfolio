@@ -57,6 +57,49 @@
                 I decided to start the Queen Mary Coding Society in the midst of the pandemic in 2020. I understood the importance of community and decided to use it as a tool to bring people together, since students were experiencing the same problem of having limited social interactions. There were 3 main aims of the society which were all met within the first 3 months: create a community of coders within the university where there will be educational and social events, enable members with all levels of experience to develop their skills, and demonstrate the opportunities existing within the technology industry.
                 In setting 3 tangible, clear aims when the society was founded, it helped to set the direction and  plan events to work towards achieving the aims. In the 21/22 academic year, I decided to continue the same goals which we had in the previous academic year, but to pass it on to the new committee. As a result of it, we’ve had many success stories including a member completing a summer internship and obtaining a technology grad job at LSEG, and people developing a new-found interest in coding. Today, there are 60 paid members in this academic year, and 221 members in the WhatsApp group chat where students use it as a “student stackoverflow”, a place where everyone can find the answers to their coding peoplems, where they can’t find it on Google.
             </p><br/>
+
+
+
+            <div class="wrapper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="https://www.themoviedb.org/t/p/original/1DDE0Z2Y805rqfkEjPbZsMLyPwa.jpg" />
+                            <div class="swiper-overlay"></div>
+                            <div class="swiper-description">
+                                <h1>The Crown</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <img src="https://www.themoviedb.org/t/p/original/jkXkaZBg8GhFrnypBnVvGDuMj5c.jpg" />
+                            <div class="swiper-overlay"></div>
+                            <div class="swiper-description">
+                                <h1>The Crown</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <img src="https://www.themoviedb.org/t/p/original/bFEFDqhxxon7CTe6k8lUgPE2qUO.jpg" />
+                            <div class="swiper-overlay"></div>
+                            <div class="swiper-description">
+                                <h1>The Crown</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <img src="https://www.themoviedb.org/t/p/original/y1TixZNYVOPBZ9CgIQHdxE83MmZ.jpg" />
+                            <div class="swiper-overlay"></div>
+                            <div class="swiper-description">
+                                <h1>The Crown</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+
+
+            
         </div>
         <div class="experience-here e1" style="display: none">
             <h2 class="daysofcode">#100DaysOfCode</h2>
@@ -115,6 +158,23 @@
            $('.e3').css('display', 'none');
            $('.e2').css('display', 'none');
             $('.e1').fadeIn("slow");
+        });
+        $(".swiper").swiper({
+        loop: true,
+        slidesPerView: 3,
+        effect: "coverflow",
+        coverflowEffect: {
+        rotate: 20,
+        slideShadows: true
+            },
+        navigation: {
+            nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+            },
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false
+        }
         });
     });
 </script>
