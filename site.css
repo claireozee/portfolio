@@ -454,7 +454,7 @@ dialog a { color: whitesmoke; }
 
  .wrapper {
     margin: 0;
-	 width: 90%;
+	 width: 100%;
 	 height: 90%;
 	 display: flex;
      flex-direction: row;
@@ -468,9 +468,9 @@ dialog a { color: whitesmoke; }
  .swiper-slide {
 	 position: relative;
 	 width: 33%;
-	 aspect-ratio: 0.75;
 	 cursor: pointer;
 	 border-radius: 10px;
+     margin: 1vh;
 }
  .swiper-slide .swiper-overlay {
 	 position: absolute;
