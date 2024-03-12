@@ -450,8 +450,8 @@ dialog a { color: whitesmoke; }
     list-style: none;
   }
   .wiper-item {
-    width: 200px;
-    height: 300px;
+    width: 350px;
+    height: 200px;
     position: relative;
     transition: scale 0.2s linear;
   }
