@@ -60,7 +60,69 @@
 
 
 
-            <div class="wrapper2">
+            <div class="wiper">
+                <button class="wiper-button wiper-button__right">
+                  <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="left" />
+                </button>
+                <div class="wiper-wrapper">
+                  <ul class="wiper-track">
+                    <li class="wiper-item">
+                      <img
+                        class="wiper__image"
+                        src="https://images.pexels.com/photos/19682307/pexels-photo-19682307/free-photo-of-pink-flowers-on-a-shrub.jpeg"
+                        alt="background-image"
+                      />
+                      <button class="swiper__image-button">Click me</button>
+                    </li>
+                    <li class="wiper-item active-swipe">
+                      <img
+                        class="wiper__image"
+                        src="https://images.pexels.com/photos/17617625/pexels-photo-17617625/free-photo-of-pink-chrysanthemum-flowers.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        alt="background-image"
+                      />
+                      <button class="swiper__image-button">Click me</button>
+                    </li>
+                    <li class="wiper-item">
+                      <img
+                        class="wiper__image"
+                        src="https://images.pexels.com/photos/19598202/pexels-photo-19598202/free-photo-of-pink-hyndrangea-flowers.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        alt="background-image"
+                      />
+                      <button class="swiper__image-button">Click me</button>
+                    </li>
+                    <li class="wiper-item">
+                      <img
+                        class="wiper__image"
+                        src="https://images.pexels.com/photos/17024197/pexels-photo-17024197/free-photo-of-a-pink-anemone-on-a-white-background.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        alt="background-image"
+                      />
+                      <button class="swiper__image-button">Click me</button>
+                    </li>
+                    <li class="wiper-item">
+                      <img
+                        class="wiper__image"
+                        src="https://images.pexels.com/photos/19682307/pexels-photo-19682307/free-photo-of-pink-flowers-on-a-shrub.jpeg"
+                        alt="background-image"
+                      />
+                      <button class="swiper__image-button">Click me</button>
+                    </li>
+                    <li class="wiper-item">
+                      <img
+                        class="wiper__image"
+                        src="https://images.pexels.com/photos/17617625/pexels-photo-17617625/free-photo-of-pink-chrysanthemum-flowers.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        alt="background-image"
+                      />
+                      <button class="swiper__image-button">Click me</button>
+                    </li>
+                  </ul>
+                </div>
+                <button class="wiper-button wiper-button__left">
+                  <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="right" />
+                </button>
+            </div>
+            <div style="height: 300px"></div>
+            
+            <!--<div class="wrapper2">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"> <img src="static/images/1-Sept23.jpg">
@@ -116,7 +178,7 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-            </div>
+            </div>-->
 
 <!--https://codepen.io/quicksilversel/details/yLwOQee
 https://codepen.io/nikczemnydev/pen/WNmXjyL-->
@@ -182,24 +244,72 @@ https://codepen.io/nikczemnydev/pen/WNmXjyL-->
             $('.e1').fadeIn("slow");
         });
     });
-    var swiper = new Swiper(".swiper", {
-  loop: true,
-  slidesPerView: 3,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 20,
-    slideShadows: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false
-  }
-});
-    //$(function() {
+
+    const wiperTrack = document.querySelector(".wiper-track");
+    const wipes = Array.from(wiperTrack.children);
+    const wipePrevBtn = document.querySelector(".wiper-button__right");
+    const wipeNextBtn = document.querySelector(".wiper-button__left");
+    const wipeWidth = wipes[0].getBoundingClientRect().width;
+
+    const arrowsBehaviour = (wipePrevBtn, wipeNextBtn, index) => {
+        if (index === 0) {
+            wipePrevBtn.classList.add("is-hidden");
+            wipeNextBtn.classList.remove("is-hidden");
+        } else if (index === wipes.length-1) {
+            wipePrevBtn.classList.remove("is-hidden");
+            wipeNextBtn.classList.add("is-hidden");
+        } else {
+            wipePrevBtn.classList.remove("is-hidden");
+            wipeNextBtn.classList.remove("is-hidden");
+        }
+    };
+
+    const wipeSlide = (wiperTrack, activeSlide, nextSlide, targetIndex) => {
+        wiperTrack.style.transform =
+        "translateX(-" + (wipeWidth + 24) * (targetIndex - 1) + "px)";
+        activeSlide.classList.remove("active-swipe");
+        activeSlide.style.transform = "scale(1)";
+        nextSlide.classList.add("active-swipe");
+        nextSlide.style.transform = "scale(1.1)";
+    };
+
+    wipeNextBtn.addEventListener("click", (e) => {
+        const activeSlide = wiperTrack.querySelector(".active-swipe");
+        const nextSlide = activeSlide.nextElementSibling;
+        const targetIndex = wipes.findIndex((slide) => slide === nextSlide);
+        wipeSlide(wiperTrack, activeSlide, nextSlide, targetIndex);
+        arrowsBehaviour(wipePrevBtn, wipeNextBtn, targetIndex);
+    });
+    wipePrevBtn.addEventListener("click", (e) => {
+        const activeSlide = wiperTrack.querySelector(".active-swipe");
+        const nextSlide = activeSlide.previousElementSibling;
+        const targetIndex = wipes.findIndex((slide) => slide === nextSlide);
+        wipeSlide(wiperTrack, activeSlide, nextSlide, targetIndex);
+        arrowsBehaviour(wipePrevBtn, wipeNextBtn, targetIndex);
+    });
+
+
+
+
+
+ //   var swiper = new Swiper(".swiper", {
+//   loop: true,
+//   slidesPerView: 3,
+//   effect: "coverflow",
+//   coverflowEffect: {
+//     rotate: 20,
+//     slideShadows: true
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev"
+//   },
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: false
+//   }
+// });
+//     //$(function() {
     //    $(".swiper").swiper({
       //      loop: true,
     //        slidesPerView: 3,
