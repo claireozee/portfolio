@@ -306,7 +306,7 @@ https://codepen.io/nikczemnydev/pen/WNmXjyL-->
 
     const wipeSlide = (wiperTrack, activeSlide, nextSlide, targetIndex) => {
         wiperTrack.style.transform =
-        "translateX(-" + (wipeWidth + 24) * (targetIndex - 1) + "px)";
+        "translateX(-" + (wipeWidth + 40) * (targetIndex - 1) + "vw)";
         activeSlide.classList.remove("active-swipe");
         activeSlide.style.transform = "scale(1)";
         nextSlide.classList.add("active-swipe");

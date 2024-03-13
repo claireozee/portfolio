@@ -458,8 +458,7 @@ dialog a { color: whitesmoke; }
     list-style: none;
   }
   .wiper-item {
-    width: 350px;
-    height: 200px;
+    width: 35vw;
     position: relative;
     transition: scale 0.2s linear;
   }
@@ -469,7 +468,6 @@ dialog a { color: whitesmoke; }
     object-fit:cover;
   }
   .wiper {
-    /*max-width: 960px;*/
     position: relative;
     margin: 0 auto;
   }
