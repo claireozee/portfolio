@@ -440,6 +440,17 @@ dialog a { color: whitesmoke; }
     height: auto;
 }*/
 
+
+/* !!!!!!!!!!!!!!! */
+#e2 {
+    display: flex;
+    flex-direction: row;
+}
+.wiper {
+    display: flex;
+    flex-direction: row;
+}
+
 .wiper-track {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
