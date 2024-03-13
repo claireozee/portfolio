@@ -504,7 +504,7 @@ dialog a { color: whitesmoke; }
     cursor: pointer;
   }
   .wiper-wrapper {
-    max-width: 660px;
+    max-width: 80vh;
     overflow: hidden;
     padding: 2rem 0.5rem;
     margin: 0 auto;
