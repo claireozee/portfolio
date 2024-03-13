@@ -472,7 +472,7 @@ dialog a { color: whitesmoke; }
     object-fit:cover;
   }
   .wiper {
-    max-width: 960px;
+    /*max-width: 960px;*/
     position: relative;
     margin: 0 auto;
   }
