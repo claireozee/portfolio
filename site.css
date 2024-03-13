@@ -379,7 +379,7 @@ img {
 	transform: none;
 	opacity: 1;	
 }
-
+*/
 
 
 
@@ -446,13 +446,10 @@ dialog a { color: whitesmoke; }
     display: flex;
     flex-direction: row;
 }
-.wiper {
-    display: flex;
-    flex-direction: row;
-}
 
 .wiper-track {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 1.5rem;
     margin: 0 auto;
