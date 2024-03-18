@@ -510,7 +510,7 @@ dialog a { color: whitesmoke; }
   }
   .wiper-wrapper li {
     list-style: none;
- }
+ }/*
   .swiper__image-button {
     right: 50%;
     top: 50%;
@@ -525,7 +525,7 @@ dialog a { color: whitesmoke; }
   }
   .swiper__image-button:hover {
     color: red;
-  }
+  }*/
   .wiper__image{
     height:100%;
     width:100%;
