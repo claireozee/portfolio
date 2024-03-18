@@ -510,10 +510,11 @@ dialog a { color: whitesmoke; }
   }
   .wiper-wrapper li {
     list-style: none;
- }/*
+ }
   .swiper__image-button {
     right: 50%;
-    top: 50%;
+    /*top: 50%;*/
+    bottom: -50%;
     position: absolute;
     padding: 0.8rem 1rem;
     border-radius: 3px;
@@ -525,7 +526,7 @@ dialog a { color: whitesmoke; }
   }
   .swiper__image-button:hover {
     color: red;
-  }*/
+  }
   .wiper__image{
     height:100%;
     width:100%;
