@@ -423,66 +423,6 @@ img {
 
 
 
-
-
-/*
-//
-//	create an 'accordion' wrapper for the quote text 
-//	1 set initial height to zero fr  
-//	2 add overflow hidden to hide quote text 
-//	3 add transtion for grid-template-rows
-// 
-.wrapper {
-	display: grid;
-  	grid-template-rows: 0fr;
-  	overflow: hidden;
-	transition: grid-template-rows 0.5s cubic-bezier(0.23, 0.93, 0.77, 1) 0.01s;
-}
-
-//
-//  add min-height 0 on the quote text to override the 
-// 	default max-content of fr - add a bit of individual
-//. animation for the quote (to not follow detail)
-// *//*
-.profile_quote { 
-	min-height: 0; 
-	transform: translateY(50%);
-	opacity: 0;
-	transition: 
-		opacity 0.8s ease-in-out,
-		transform 0.8s cubic-bezier(0.23, 0.93, 0.77, 1) 0.01s
-	;	
-}
-
-
-// 	expand (animated) wrapper row height to 1 fr
-//	(this will animate detail up when making room for quote)
-.project-content:hover .wrapper {
-  	grid-template-rows: 1fr;
-}
-
-// remove translate to male quote slide in 
-.project-content:hover .profile_quote {
-	transform: none;
-	opacity: 1;	
-}
-*/
-
-
-
-
-
-/*
-// credit note
-dialog { position: absolute; z-index: 1; background: none; color: white; border: 0; font-size: .8rem; padding:.5em;}
-dialog a { color: whitesmoke; }
-
-*/
-
-
-
-
-
 /*blog*/ /*
 #thoughts-content {
     flex-direction: column-reverse;
