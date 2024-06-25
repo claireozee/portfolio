@@ -143,15 +143,17 @@ a:active {
 .experience-company-name {
     color:rgb(67, 67, 158);
 }
-.experience-company-name h3{
+.experience-company-name h3 {
     margin-bottom: 0;
 }
-.experience-company-name h4{
+.experience-company-name h4 {
     color:rgb(180, 180, 180);
     margin-top: 0;
     font-style: italic;
 }
-
+.experience-points {
+    margin-left: 3em;
+}
 
 
 
