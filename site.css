@@ -442,31 +442,14 @@ img {
 	transition: transform 0.5s cubic-bezier(0.23, 0.93, 0.77, 1) 0.1s;
 }
 
+/*blog*/ 
+.blog-nav {
+    background: url('static/images/newspaper-dark.jpg');
+    background-size: cover;
 
+}
 
-
-
-/*blog*/ /*
-#thoughts-content {
-    flex-direction: column-reverse;
-}
-.thoughtsrow {
-    display: flex;
-    flex-direction: row-reverse;
-}
-.col {
-    padding: 1vh;
-    margin: 1vh;
-    border: blue 3px solid;
-    height: 15vh;
-    width: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.col:hover {
-    cursor: pointer;
-}
+/*
 .back-button {
     position: fixed;
     top: 15vh;
