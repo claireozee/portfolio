@@ -136,9 +136,20 @@ a:active {
 }
 
 /* CV page */
+/*
 .cv-nav {
     background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.5)), url("static/images/cv.jpg");
+} */
+.cv-nav {
+    background-image: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0)), url("static/images/cv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 } 
+.cv-footer {
+    background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.5)), url("static/images/cv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .cv-content { 
     display: block;
