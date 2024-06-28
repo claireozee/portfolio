@@ -12,14 +12,10 @@ a, a:visited {
     text-decoration: none;
     color: rgb(183, 183, 183); 
 } 
-a:hover/*, .backhome:hover*/ {
-    text-decoration: none;
-    /*color: rgb(0, 0, 0); */
+a:hover, .backhome:hover {
+    color: white;
     font-weight: bold;
     cursor: pointer;
-}
-.backhome:hover {
-    color: white;
 }
 a:active {
     color:rgb(69, 69, 231);
@@ -65,17 +61,17 @@ a:active {
     font-variant: small-caps;
 }
 #home-content button:hover {
-    border: 2px solid white;
+    border: 2px solid rgb(69, 69, 231);
     cursor: pointer;
 }
 #home-content button:hover > a {
-    color: white;
+    color: rgb(69, 69, 231);
 }
 #home-content button:active, button:visited {
     border: 2px solid rgb(69, 69, 231);
 }
 #home-content button:active > a {
-    color: rgbrgb(69, 69, 231);
+    color: rgb(69, 69, 231);
 }
 
 /* nav & footer */
@@ -98,7 +94,7 @@ a:active {
     align-items: center;
 }
 .navlinks a {
-    text-decoration: none;
+    
     color: rgb(182, 182, 182);  
     text-transform: uppercase;
     padding: 0 1.2vh;
@@ -228,7 +224,6 @@ img {
     margin: 0;
 }
 .daysofcode a {
-    text-decoration: none;
     color: rgb(182, 182, 182);  
 }
 .daysofcode a:hover {
