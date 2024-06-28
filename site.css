@@ -210,20 +210,8 @@ a:active {
     height: 30vh;
     width: auto;
     border-radius: 1rem;
-}
-img {
-    height: auto;
-    width: auto;
-}
-.daysofcode img {
     margin: 1vh;
 }
-.daysofcode p {
-    margin: 0;
-}
-/*.daysofcode a:hover {
-    color: orange;
-}*/
 
 /* experience - coding soc carousel */
 #e2 {
@@ -454,14 +442,6 @@ img {
     background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.5)), url("static/images/newspaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-
-/*
-.back-button {
-    position: fixed;
-    top: 15vh;
-    left: 3vh;
 }
 
 /*creative*/ /*
