@@ -447,7 +447,7 @@ a:active {
     margin: 0 auto;
 }
 .blogpost-box {
-    background-color: #e8f0fe;
+    background-color: rgb(227, 239, 255);
     border-radius: 12px;
     padding: 24px;
     display: flex;
@@ -460,35 +460,13 @@ a:active {
     font-size: 20px;
     font-weight: 900;
     line-height: 1.2;
-    margin-bottom: 8px;
+    margin: 10px 0;
 }
 .pricing-subtitle {
     color: #d81b60;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 24px;
-}
-.price {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 1;
-    margin-bottom: 4px;
-}
-.vat {
-    font-size: 24px;
-    font-weight: 700;
-    color: #555;
-}
-.price-details {
-    padding-left: 10px;
-    margin: 24px 0;
-  
-}
-.price-details li {
-  
-    margin-bottom: 12px;
-    font-size: 12px;
-    line-height: 1.4;
 }
 .read-button {
     background-color:rgb(21, 89, 178);
@@ -499,7 +477,6 @@ a:active {
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    margin-top: auto;
     text-align: center;
 }
 .read-button:hover {
