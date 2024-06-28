@@ -204,6 +204,7 @@ a:active {
 }
 
 /*FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! */
+/* experience page */
 /* 100 days of code */
 .resize-img {
     height: 30vh;
@@ -220,21 +221,9 @@ img {
 .daysofcode p {
     margin: 0;
 }
-.daysofcode a {
-    color: rgb(182, 182, 182);  
-}
-.daysofcode a:hover {
+/*.daysofcode a:hover {
     color: orange;
-}
-.twitter-img {
-    height: 40vh;
-    width: 60vh;
-    float: right;
-}
-.google-img, .microsoft-img {
-    height: 60vh;
-    width: 45vh;
-}
+}*/
 
 /* experience - coding soc carousel */
 #e2 {
