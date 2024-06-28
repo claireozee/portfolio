@@ -114,11 +114,11 @@ a:active {
 .nav-active {
     border-bottom: 3px solid rgb(69, 69, 231);
 }
-#index1footer, .navbar-index, .experiencefooter, .blog-footer, .project-footer  {
+#index1footer, .navbar-index, .experiencefooter, .blog-footer {
     position: fixed;
     width: 100%;
 }
-#index1footer, .experiencefooter, .blog-footer, .project-footer {
+#index1footer, .experiencefooter, .blog-footer {
     position: fixed;
     bottom: 0;
 }
