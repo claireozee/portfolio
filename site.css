@@ -18,7 +18,7 @@ a:hover, .backhome:hover {
     cursor: pointer;
 }
 a:active {
-    color:rgb(69, 69, 231);
+    color:rgb(21, 89, 178);
 }
 .content { 
     padding: 10vh;
@@ -62,17 +62,17 @@ a:active {
     border-radius: 1rem;
 }
 #home-content button:hover {
-    border: 2px solid rgb(69, 69, 231);
+    border: 2px solid rgb(21, 89, 178);
     cursor: pointer;
 }
 #home-content button:hover > a {
-    color: rgb(69, 69, 231);
+    color: rgb(21, 89, 178);
 }
 #home-content button:active, button:visited {
-    border: 2px solid rgb(69, 69, 231);
+    border: 2px solid rgb(21, 89, 178);
 }
 #home-content button:active > a {
-    color: rgb(69, 69, 231);
+    color: rgb(21, 89, 178);
 }
 
 /* nav & footer */
@@ -104,14 +104,14 @@ a:active {
     color: white;
 }
 .navlinks a:active {
-    color:rgb(69, 69, 231);
+    color:rgb(21, 89, 178);
 }
 .navname {
     margin: 1vh;
     color: rgb(182, 182, 182); 
 }
 .nav-active {
-    border-bottom: 3px solid rgb(69, 69, 231);
+    border-bottom: 3px solid rgb(21, 89, 178);
 }
 #index1footer, .navbar-index, .blog-footer {
     position: fixed;
@@ -141,7 +141,7 @@ a:active {
     display: block;
 }
 .experience-company-name {
-    color:rgb(67, 67, 158);
+    color:rgb(21, 89, 178);
 }
 .experience-company-name h3 {
     margin-bottom: 0;
@@ -488,7 +488,7 @@ a:active {
     line-height: 1.4;
 }
 .buy-button {
-    background-color:rgb(21, 89, 178);;
+    background-color:rgb(21, 89, 178);
     color: white;
     border: none;
     padding: 12px;
