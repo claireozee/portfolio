@@ -95,7 +95,6 @@ a:active {
     align-items: center;
 }
 .navlinks a {
-    
     color: rgb(182, 182, 182);  
     text-transform: uppercase;
     padding: 0 1.2vh;
@@ -114,22 +113,17 @@ a:active {
 .nav-active {
     border-bottom: 3px solid rgb(69, 69, 231);
 }
-#index1footer, .navbar-index, .experiencefooter, .blog-footer {
+#index1footer, .navbar-index, .blog-footer {
     position: fixed;
     width: 100%;
 }
-#index1footer, .experiencefooter, .blog-footer {
+#index1footer, .blog-footer {
     position: fixed;
     bottom: 0;
 }
 #copyright {
     margin: 0;
     color: rgb(201, 201, 201);
-}
- 
-/* keep width of experience & projects page the same when content is shown */
-.contentbody {
-    width: 100vw;
 }
 
 /* CV page */
@@ -159,58 +153,6 @@ a:active {
 }
 .experience-points {
     margin-left: 2em;
-}
-
-/* experience */
-.contendor form {
-    box-sizing: border-box;
-    text-align: center;
-    display: inline-flex;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    justify-content: center;
-    left: 2vh;
-    top: 0;
-}
-.form-op {
-    margin: 1.5vh;
-}
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: rgb(0,0,0,0.6);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.tt1:hover .ex1-tt1 {
-    visibility: visible;
-}
-.tt2:hover .ex2-tt2 {
-    visibility: visible;
-}
-.tt3:hover .ex3-tt3 {
-    visibility: visible;
-}
-
-/*FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! FIX! */
-/* experience page */
-/* 100 days of code */
-.resize-img {
-    height: 30vh;
-    width: auto;
-    border-radius: 1rem;
-    margin: 1vh;
 }
 
 /* experience - coding soc carousel */
@@ -308,6 +250,10 @@ a:active {
 }
 
 /*projects*/
+/* keep width of projects page the same when content is shown */
+.contentbody {
+    width: 100vw;
+}
 .project-nav {
     background-image: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0)), url("static/images/project.jpg");
     background-repeat: no-repeat;
@@ -443,8 +389,55 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.contendor form {
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    justify-content: center;
+    left: 2vh;
+    top: 0;
+}
+.form-op {
+    margin: 1.5vh;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.tt1:hover .ex1-tt1 {
+    visibility: visible;
+}
+.tt2:hover .ex2-tt2 {
+    visibility: visible;
+}
+.tt3:hover .ex3-tt3 {
+    visibility: visible;
+}
 
 
+/* 100 days of code */
+.resize-img {
+    height: 30vh;
+    width: auto;
+    border-radius: 1rem;
+    margin: 1vh;
+}
 
 
 
