@@ -59,6 +59,7 @@ a:active {
     background-color: transparent;
     border: 2px solid rgba(183, 183, 183);
     font-variant: small-caps;
+    border-radius: 1rem;
 }
 #home-content button:hover {
     border: 2px solid rgb(69, 69, 231);
