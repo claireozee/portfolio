@@ -208,6 +208,7 @@ a:active {
 .resize-img {
     height: 30vh;
     width: auto;
+    border-radius: 1rem;
 }
 img {
     height: auto;
