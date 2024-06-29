@@ -445,14 +445,23 @@ a:active {
     margin: 0 auto;
 }
 .blogpost-box {
-    background-color: rgb(227, 239, 255);
+    background-color: rgb(151, 196, 255);
     border-radius: 12px;
     padding: 24px;
     display: flex;
     flex-direction: column;
 }
+
 .blogpost-pic {
     border-radius: 12px;
+    filter: grayscale(100%); /* remove? */
+    -webkit-filter: grayscale(100%);
+}
+.blogpost-box:hover {
+    background-color: rgb(227, 239, 255);
+    box-shadow: 10px 5px 5px rgb(0,0,0,0.6);
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 .blogpost-title {
     font-size: 20px;
