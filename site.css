@@ -455,14 +455,15 @@ a:active {
 
 .blogpost-pic {
     border-radius: 12px;
-    filter: grayscale(100%); /* remove? */
-    -webkit-filter: grayscale(100%);
+    /*filter: grayscale(100%);  remove? 
+    -webkit-filter: grayscale(100%);*/
 }
 .blogpost-box:hover {
     background-color: rgb(227, 239, 255);
     box-shadow: 10px 5px 5px rgb(0,0,0,0.6);
-    filter: none;
-    -webkit-filter: grayscale(0);
+    /* filter: none;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);*/
 }
 .blogpost-title {
     font-size: 20px;
@@ -471,7 +472,7 @@ a:active {
     margin: 10px 0;
 }
 .blogpost-subtitle {
-    color: #d81b60;
+    color: #800b36;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 24px;
