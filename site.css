@@ -88,6 +88,7 @@ a:active {
 .footer {
     padding: 1vh;
     font-variant: small-caps; 
+    bottom: 0;
 }
 .navcontent {
     display: flex;
@@ -113,11 +114,11 @@ a:active {
 .nav-active {
     border-bottom: 3px solid rgb(21, 89, 178);
 }
-#index1footer, .navbar-index, .blog-footer {
+#index1footer, .navbar-index {
     position: fixed;
     width: 100%;
 }
-#index1footer, .blog-footer {
+#index1footer {
     position: fixed;
     bottom: 0;
 }
@@ -486,7 +487,7 @@ a:active {
     font-weight: 700;
     text-align: center;
 }
-.read-button:hover {
+.read-button:hover, .blogpost-back:hover {
     background-color: rgb(11, 66, 138);
 }
 
