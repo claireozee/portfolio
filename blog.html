@@ -25,40 +25,38 @@
           <img src="static/images/math-art.jpg" class="blogpost-pic">
               <div class="blogpost-title">Where mathematics meets art... data analysis</div>
               <div class="blogpost-subtitle">March 2024</div>
-              <button class="read-button">Read</button>
+              <button class="read-button blogpost-4">Read</button>
         </div>
         <div class="blogpost-grid">
           <div class="blogpost-box">
             <img src="static/images/math-art.jpg" class="blogpost-pic">
                 <div class="blogpost-title">Life as a technology summer intern</div>
                 <div class="blogpost-subtitle">August 2022</div>
-                <button class="read-button">Read</button>
+                <button class="read-button blogpost-3">Read</button>
           </div>
         <div class="blogpost-box">
           <img src="static/images/qmcs-pres.jpg" class="blogpost-pic">
               <div class="blogpost-title">Starting a coding society resembles gaining startup experience</div>
               <div class="blogpost-subtitle">June 2022</div>
-              <button class="read-button">Read</button>
+              <button class="read-button blogpost-2">Read</button>
         </div>
       
         <div class="blogpost-box">
           <img src="static/images/twitter.jpeg" class="blogpost-pic">
               <div class="blogpost-title">How #100DaysOfCode lead to an interest in technology...</div>
               <div class="blogpost-subtitle">August 2020</div>
-              <button class="read-button">Read</button>
+              <button class="read-button blogpost-1">Read</button>
         </div>     
+      </div>
     </div>
     </br></br>
     <div>
       <a class="back-button">ONE</a>
         <a class="back-button">TWO</a>
         <a class="back-button">THREE</a>
-            
-        <p>2. Data analysis - maths and art</p>
-        <p>1. Coding experience resembles start up experience - top 3 lessons learnt from starting a society in uni</p>
     </div>
 
-    <div class="contendor tooltip">
+ <!--   <div class="contendor tooltip">
             <form>
                 <div class="tt3">
                     <input type="radio" class="form-op" id="ex3"><span class="tooltiptext ex3-tt3">Technology Summer Internship</span>
@@ -70,7 +68,7 @@
                     <input type="radio" class="form-op" id="ex1"><span class="tooltip tooltiptext ex1-tt1">100 Days Of Code</span>
                 </div>
             </form>
-        </div>
+        </div> -->
         <div class="experience-here e3" style="display: none">
           <h2 class="lseg">London Stock Exchange</h2>
           <h5>Technology Summer Internship</h5>
@@ -250,6 +248,29 @@
 <script src="https://kit.fontawesome.com/ace997583a.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
+    $(document).ready(function() {
+        $('.blogpost-1').click(function() {
+            $('.blogpost-grid').css('display', 'none');
+            $('.e1').css('display', 'none');
+            $('.e3').fadeIn("slow");
+        });
+        $('.blogpost-2').click(function() {
+            $('.e3').css('display', 'none');
+            $('.e1').css('display', 'none');
+            $('.e2').fadeIn("slow");
+        });
+        $('.blogpost-3').click(function() {
+            $('.e3').css('display', 'none');
+            $('.e2').css('display', 'none');
+            $('.e1').fadeIn("slow");
+        });
+        $('.blogpost-4').click(function() {
+            $('.e3').css('display', 'none');
+            $('.e2').css('display', 'none');
+            $('.e1').fadeIn("slow");
+        });
+    });
+
     $(document).ready(function() {
         $('#ex3').click(function() {
             $('.e2').css('display', 'none');
