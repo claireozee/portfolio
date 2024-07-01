@@ -156,100 +156,6 @@ a:active {
     margin-left: 2em;
 }
 
-/* experience - coding soc carousel */
-#e2 {
-    display: flex;
-    flex-direction: row;
-}
-.wiper-track {
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 1.5rem;
-    margin: 0 auto;
-    transition: transform 0.4s ease-in;
-    padding: 0 1rem;
-    list-style: none;
-}
-.wiper-item {
-    width: 35vw;
-    position: relative;
-    transition: scale 0.2s linear;
-}
-.wiper-button img {
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
-}
-.wiper {
-    position: relative;
-    margin: 0 auto;
-}
-.active-swipe {
-    transform: scale(1.1);
-}
-.wiper-button {
-    margin: 0 1rem;
-    height: 70px;
-    width: 45px;
-    position: absolute;
-    top: 50%;
-    background: transparent;
-    border: none;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-.wiper-button__left {
-    right: 0;
-    transform: translateY(-50%) rotate(180deg);
-}
-.wiper__image-button {
-    right: 50%;
-    top: 50%;
-    position: absolute;
-    padding: 0.8rem 1rem;
-    border-radius: 3px;
-    background-color: white;
-    border: none;
-    font-size: 1.4rem;
-    transform: translateY(-50%) translateX(50%);
-    cursor: pointer;
-}
-.wiper-wrapper {
-    max-width: 80vh;
-    overflow: hidden;
-    padding: 2rem 0.5rem;
-    margin: 0 auto;
-    display: flex;
-}
-.wiper-wrapper li {
-    list-style: none;
-}
-.swiper__image-button {
-    right: 50%;
-    top: 50%;
-    position: absolute;
-    padding: 0.8rem 1rem;
-    border-radius: 3px;
-    background-color: white;
-    border: none;
-    font-size: 1rem;
-    transform: translateY(-50%) translateX(50%);
-    cursor: pointer;
-}
-.swiper__image-button:hover {
-    color: red;
-}
-.wiper__image{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-    border-radius:30px;
-}
-.is-hidden{
-    display:none;
-}
-
 /*projects*/
 /* keep width of projects page the same when content is shown */
 .contentbody {
@@ -390,58 +296,12 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contendor form {
-    box-sizing: border-box;
-    text-align: center;
-    display: inline-flex;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    justify-content: center;
-    left: 2vh;
-    top: 0;
-}
-.form-op {
-    margin: 1.5vh;
-}
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: rgb(0,0,0,0.6);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-.tt1:hover .ex1-tt1 {
-    visibility: visible;
-}
-.tt2:hover .ex2-tt2 {
-    visibility: visible;
-}
-.tt3:hover .ex3-tt3 {
-    visibility: visible;
-}
-
-
-/* 100 days of code */
-.resize-img {
-    height: 30vh;
-    width: auto;
-    border-radius: 1rem;
-    margin: 1vh;
-}
 .blogpost-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: 80px, 80px;*/
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    /*grid-template-rows: auto;*/
     gap: 20px;
     margin: 0 auto;
 }
@@ -492,6 +352,152 @@ a:active {
     background-color: rgb(11, 66, 138);
 }
 
+
+/* blog post 1 - 100 days of code */
+.resize-img {
+    height: 30vh;
+    width: auto;
+    border-radius: 1rem;
+    margin: 1vh;
+}
+/* blog post 2 - coding soc carousel */
+#e2 {
+    display: flex;
+    flex-direction: row;
+}
+.wiper-track {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5rem;
+    margin: 0 auto;
+    transition: transform 0.4s ease-in;
+    padding: 0 1rem;
+    list-style: none;
+}
+.wiper-item {
+    width: 35vw;
+    position: relative;
+    transition: scale 0.2s linear;
+}
+.wiper-button img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.wiper {
+    position: relative;
+    margin: 0 auto;
+}
+.active-swipe {
+    transform: scale(1.1);
+}
+.wiper-button {
+    margin: 0 1rem;
+    height: 70px;
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.wiper-button__left {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+.wiper__image-button {
+    right: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+    font-size: 1.4rem;
+    transform: translateY(-50%) translateX(50%);
+    cursor: pointer;
+}
+.wiper-wrapper {
+    max-width: 80vh;
+    overflow: hidden;
+    padding: 2rem 0.5rem;
+    margin: 0 auto;
+    display: flex;
+}
+.wiper-wrapper li {
+    list-style: none;
+}
+.swiper__image-button {
+    right: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    transform: translateY(-50%) translateX(50%);
+    cursor: pointer;
+}
+.swiper__image-button:hover {
+    color: red;
+}
+.wiper__image{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius:30px;
+}
+.is-hidden{
+    display:none;
+}
+/* blog post 3 - LSEG */
+
+/* blog post 4 - maths and art */
+
+/* tooltip code (experience page)*/
+.contendor form {
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    justify-content: center;
+    left: 2vh;
+    top: 0;
+}
+.form-op {
+    margin: 1.5vh;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.tt1:hover .ex1-tt1 {
+    visibility: visible;
+}
+.tt2:hover .ex2-tt2 {
+    visibility: visible;
+}
+.tt3:hover .ex3-tt3 {
+    visibility: visible;
+} /* tooltip code ends here*/
 
 
 /*creative*/ /*
