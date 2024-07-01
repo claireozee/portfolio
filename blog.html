@@ -50,13 +50,17 @@
       </div>
     </div>
     </br></br>
-    <div>
-      <a class="back-button">ONE</a>
-        <a class="back-button">TWO</a>
-        <a class="back-button">THREE</a>
+    <div class="experience-here e4" style="display: none">
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <div class="blog-backbutton">
+        <button class="read-button blogpost-back">Back</button>
+      </div>
     </div>
-
-
         <div class="experience-here e3" style="display: none">
           <h2 class="lseg">London Stock Exchange</h2>
           <h5>Technology Summer Internship</h5>
@@ -71,6 +75,9 @@
             <p>ml proects - neural network - prediction model</br></br>Worked on a machine learning project where I developed a predictive model for daily workflow job timings using a Python Jupyter Notebook.</br></br>
               Gained an insight into the internal structure of LCH’s legacy system whilst understanding its importance in LSEG, through shadowing and networking with members of a cross-functional team.</br></br>
               Updated the internal repository with technical process documents, whilst communicating with staff for the necessary information, thus building and maintaining internal relationships.</p>
+              <div class="blog-backbutton">
+                <button class="read-button blogpost-back">Back</button>
+              </div>
         </div>
         <div class="experience-here e2" style="display: none">
             <h2>Coding Society</h2>
@@ -189,7 +196,10 @@
                   <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="right" />
                 </button>
             </div>
-            <!--https://codepen.io/Yulia-Verbylo/pen/NWmKPaX-->          
+            <!--https://codepen.io/Yulia-Verbylo/pen/NWmKPaX-->   
+            <div class="blog-backbutton">
+              <button class="read-button blogpost-back">Back</button>
+            </div>       
         </div>
         <div class="experience-here e1" style="display: none">
             <h2 class="daysofcode">#100DaysOfCode</h2>
@@ -219,10 +229,13 @@
             <img class="resize-img" src="static/images/google.jpg" class="google-img">
             <img class="resize-img" src="static/images/google2.jpg" class="google-img">
             <img class="resize-img" src="static/images/microsoft.jpg" class="microsoft-img">
+            <div class="blog-backbutton">
+              <button class="read-button blogpost-back">Back</button>
+            </div>
         </div>
 
         <!--https://codepen.io/hrtzt/pen/pgXMYb page transition, pug & sass-->
-
+        
     </div>
 
 
@@ -253,7 +266,16 @@
             $('.blogpost-grid').css('display', 'none');
             $('.e1').fadeIn("slow");
         });
+        $('.blogpost-back').click(function() {
+            $('.e4').css('display', 'none');
+            $('.e3').css('display', 'none');
+            $('.e2').css('display', 'none');
+            $('.e1').css('display', 'none');
+            $('.blogpost-grid').fadeIn("slow");
+        });
     });
+
+    blogpost-back
 
     const wiperTrack = document.querySelector(".wiper-track");
     const wipes = Array.from(wiperTrack.children);
