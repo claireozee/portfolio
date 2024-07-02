@@ -335,7 +335,7 @@ a:active {
     margin: 10px 0;
 }
 .blogpost-subtitle {
-    color: #800b36;
+    color: #a10f45;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 24px;
@@ -366,9 +366,7 @@ a:active {
     width: auto;
     border-radius: 1rem;
     margin: 1vh;
-}
-.twitter-img {
-    display: inline;
+    display: inline-block;
 }
 /* blog post 2 - coding soc carousel */
 #e2 {
