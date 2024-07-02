@@ -367,6 +367,9 @@ a:active {
     border-radius: 1rem;
     margin: 1vh;
 }
+.twitter-img {
+    display: inline;
+}
 /* blog post 2 - coding soc carousel */
 #e2 {
     display: flex;
