@@ -155,6 +155,9 @@ a:active {
 .experience-points {
     margin-left: 2em;
 }
+.upper {
+    text-transform: uppercase;
+}
 
 /*projects*/
 /* keep width of projects page the same when content is shown */
