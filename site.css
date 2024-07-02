@@ -354,7 +354,11 @@ a:active {
 .read-button:hover, .blogpost-back:hover {
     background-color: rgb(11, 66, 138);
 }
-
+.blog-backbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
 
 /* blog post 1 - 100 days of code */
 .resize-img {
