@@ -370,7 +370,7 @@ a:active {
     display: inline-block;
 }
 /* blog post 2 - coding soc carousel */
-#e2 {
+/*#e2 {
     display: flex;
     flex-direction: row;
 }
@@ -461,7 +461,7 @@ a:active {
 }
 .is-hidden{
     display:none;
-}
+} OLD CAROUSEL CODE - DELETE? */
 
 /* coding soc new slideshow here */
 /* Slideshow container */
@@ -469,15 +469,17 @@ a:active {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+.codingsoc-img {
+    border-radius: 1rem;
+}
+/* Next & previous buttons */
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -490,21 +492,18 @@ a:active {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
+/* Add background to arrows on hover */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.7);
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+  /* Caption text - NOT NEEDED (ADD EXPLANATION?) */
+.text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -512,19 +511,17 @@ a:active {
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
+}
   
   /* Number text (1/3 etc) */
-  .numbertext {
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -533,22 +530,19 @@ a:active {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+.active, .dot:hover {
     background-color: #717171;
-  }
-  
+}
   /* Fading animation */
-  .fade {
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
+}
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
 
 
 
