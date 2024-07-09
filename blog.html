@@ -23,7 +23,7 @@
       <div class="blogpost-grid">
         <div class="blogpost-box">
             <img src="static/images/math-art.jpg" class="blogpost-pic">
-              <div class="blogpost-title">Where mathematics meets art... data analysis</div>
+              <div class="blogpost-title">Data analysis: where mathematics meets art...</div>
               <div class="blogpost-subtitle">March 2024</div>
               <button class="read-button blogpost-4">Read</button>
         </div>
@@ -46,7 +46,7 @@
               <button class="read-button blogpost-1">Read</button>
         </div>     
       </div>
-      
+
     </br></br>
     <div class="experience-here e4" style="display: none">
       <h2>heading here</h2>
@@ -86,7 +86,7 @@
 
             <p>Upon restarting university and having an interest in coding, I was looking for opportunities to develop my coding skills, I decided to start the Coding Society.</p>
 
-            sep 2019 - jun 2020 = 
+            <p>sep 2019 - jun 2020 = 
             after #100 days of code, continued tech events
             online immersion (silicon valley) in Summer
             looking for coding soc, so started online
@@ -94,7 +94,99 @@
 
             sep 2021-jul2022 with a committee
 
-            main lessons learnt - if i believe in someting, others will believe in it too
+            main lessons learnt - if i believe in someting, others will believe in it too</p>
+
+
+            <div>
+              <h2>slideshow here</h2>
+
+              <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 11</div>
+                  <img src="static/images/2-Oct8-BlackInTech.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 11</div>
+                  <img src="static/images/3-Oct15-Movie.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 11</div>
+                  <img src="static/images/4-Oct22-CodeWebsite.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 11</div>
+                  <img src="static/images/5-Oct29-EscapeRoom.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 11</div>
+                  <img src="static/images/6-Nov5-CodingInterviews.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">6 / 11</div>
+                  <img src="static/images/7-Nov12-KahootSocial.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">7 / 11</div>
+                  <img src="static/images/8-Nov19-Python101.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">8 / 11</div>
+                  <img src="static/images/9-Nov26-GameNight.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">9 / 11</div>
+                  <img src="static/images/10-Dec3-MovieNight.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">10 / 11</div>
+                  <img src="static/images/11-Mar11-MicrosoftEmployee.jpeg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+              </div>
+            </div>
+
+
+
+
             
             <p>The Queen Mary Coding Society is here to create a community of coders and computer programmers within the university. Programming has a wide range of applications and we aim to explore some of them through exciting social and educational events, including bi-annual hackathons. </br>
                 We understand that learning to code is like learning a new language; it requires patience and has to be practiced often in order to develop and become fluent. Because of this, we send weekly resources to our members to enable their development and have created a ‘student Stack Overflow’ within our WhatsApp group chat i.e., a student community where everyone has the opportunity to share their knowledge. 
@@ -337,6 +429,43 @@
         wipeSlide(wiperTrack, activeSlide, nextSlide, targetIndex);
         arrowsBehaviour(wipePrevBtn, wipeNextBtn, targetIndex);
     });
+
+
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+
 </script>
 </body>
 </html>
