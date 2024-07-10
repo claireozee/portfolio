@@ -350,19 +350,19 @@ a:active {
 }
 
 /* blog post 2 - coding soc slideshow */
-.slideshow-container {
+.slideshow-container, .slideshow-container2 {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 /* Hide the images by default */
-.mySlides {
+.mySlides, .mySlides2 {
     display: none;
 }
 .codingsoc-img {
     border-radius: 1rem;
 }
-.prev, .next {
+.prev, .next, .prev2, .next2{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -376,12 +376,12 @@ a:active {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-.next {
+.next, .next2 {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 /* Add background to arrows on hover */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover, .prev2:hover, .next2:hover{
     background-color: rgba(0,0,0,0.7);
 }
   /* Caption text - NOT NEEDED (ADD EXPLANATION?) */
@@ -401,7 +401,7 @@ a:active {
     position: absolute;
     top: 0;
 }
-.dot {
+.dot, .dot2{
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -411,14 +411,18 @@ a:active {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active, .dot:hover, .active2, .dot2:hover {
     background-color: #717171;
 }
-.fade {
+.fade, .fade2 {
     animation-name: fade;
     animation-duration: 1.5s;
 }
 @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade2 {
     from {opacity: .4}
     to {opacity: 1}
 }

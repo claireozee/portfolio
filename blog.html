@@ -82,9 +82,24 @@
         <div class="experience-here e2" style="display: none">
             <h2>Coding Society</h2>
             <h5 class="blogpost-subtitle">June 2022</h5>
-            <p>Carousel of events I've hosted</p>
+            <p>Upon restarting university, completing the #100DaysofCode challenge and discovering an interest in technology, I was looking for opportunities to develop my coding skills. I realised that there wasn't a society that existed within my university at the time, I thought that if I were looking for a community to join, I'm sure others were too... so I started the Queen Mary Coding Society in <strong>September 2020</strong>.</p>
+        </br>
+            <h4><u>Aims</u></h4>
+            <p>I started by defining the aims of the society for the academic year and planning weekly events in line with those aims.</p>
+            
+              <ol>
+                <li>Create a <strong>community of coders</strong> within the university</li>
+                <li>Allow members with all levels of experience to <strong>develop their skills</strong></li>
+                <li>Demonstrate the <strong>opportunities</strong> within the tech industry</li>
+              </ol>
+        </br>
+            <h4><u>How?</u></h4>
+            <p>Since we were still returning to normality after COVID, the academic year (and consequently, all the society events) were hosted online, which made things a bit easier, as I knew I could use social media to reach more people. I knew that in order to achieve these goals and build a community of people who remain, I'd have to host </p>
 
-            <p>Upon restarting university and having an interest in coding, I was looking for opportunities to develop my coding skills, I decided to start the Coding Society.</p>
+            I knew that the biggest challenge I'd face was forming a committee. ...
+
+
+
 
             <p>sep 2019 - jun 2020 = 
             after #100 days of code, continued tech events
@@ -97,7 +112,7 @@
             main lessons learnt - if i believe in someting, others will believe in it too</p>
 
 
-            <div>
+            <div class="codingsoc-slideshow">
               <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
@@ -185,6 +200,77 @@
                 In setting 3 tangible, clear aims when the society was founded, it helped to set the direction and  plan events to work towards achieving the aims. In the 21/22 academic year, I decided to continue the same goals which we had in the previous academic year, but to pass it on to the new committee. As a result of it, we’ve had many success stories including a member completing a summer internship and obtaining a technology grad job at LSEG, and people developing a new-found interest in coding. Today, there are 60 paid members in this academic year, and 221 members in the WhatsApp group chat where students use it as a “student stackoverflow”, a place where everyone can find the answers to their coding peoplems, where they can’t find it on Google.
             </p><br/>
 
+
+
+
+            <!-- SECOND SLIDESHOW -->
+            <div class="codingsoc-slideshow2">
+              <div class="slideshow-container2">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides2 fade2">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="static/images/qmcs-1.jpg" style="width:100%" class="codingsoc-img">
+                </div>
+              
+                <div class="mySlides2 fade2">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="static/images/qmcs-pres-full.jpg" style="width:100%" class="codingsoc-img">
+                </div>
+
+                <div class="mySlides2 fade2">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="static/images/qmcs1-onlinegame.jpg" style="width:100%" class="codingsoc-img">
+                </div>
+
+                <div class="mySlides2 fade2">
+                  <div class="numbertext">4 / 7</div>
+                  <img src="static/images/qmcs2-webscraping.jpg" style="width:100%" class="codingsoc-img">
+                </div>
+
+                <div class="mySlides2 fade2">
+                  <div class="numbertext">5 / 7</div>
+                  <img src="static/images/qmcs3-fintech.jpg" style="width:100%" class="codingsoc-img">
+                </div>
+
+                <div class="mySlides2 fade2">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="static/images/qmcs4-website.jpg" style="width:100%" class="codingsoc-img">
+                </div>
+
+                <div class="mySlides2 fade2">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="static/images/qmcs5-discordbot.jpg" style="width:100%" class="codingsoc-img">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide(1)"></span>
+                <span class="dot2" onclick="currentSlide(2)"></span>
+                <span class="dot2" onclick="currentSlide(3)"></span>
+                <span class="dot2" onclick="currentSlide(4)"></span>
+                <span class="dot2" onclick="currentSlide(5)"></span>
+                <span class="dot2" onclick="currentSlide(6)"></span>
+                <span class="dot2" onclick="currentSlide(7)"></span>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
             <!--image carousel 
             https://codepen.io/Yulia-Verbylo/pen/NWmKPaX -->   
             <div class="blog-backbutton">
@@ -271,7 +357,7 @@
         });
     });
 
-  let slideIndex = 1;
+let slideIndex = 1;
   showSlides(slideIndex);
 
 // Next/previous controls
@@ -300,6 +386,64 @@
     dots[slideIndex-1].className += " active";
   }
 
+  /*let slideIndex = 1;
+  showSlides(slideIndex);
+
+// Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+// Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot2");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active2", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active2";
+  }
+let slideIndex = 1;
+  showSlides(slideIndex);
+
+// Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+// Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+
+
   /*let slideIndex = 0;
   showSlides();
 
@@ -314,6 +458,31 @@
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 8000); // Change image every 8 seconds
 }*/
+
+
+/*
+/* Multiple slideshows 
+let slideIndex = [1,1];*/
+/* Class the members of each slideshow group with different CSS classes */
+/*let slideId = ["mySlides", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}*/
+
 
 </script>
 </body>
