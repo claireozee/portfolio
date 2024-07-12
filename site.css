@@ -341,12 +341,10 @@ a:active {
 }
 
 /* blog post 1 - 100 days of code */
-.resize-img {
+.code-image {
     height: 30vh;
     width: auto;
     border-radius: 1rem;
-    margin: 1vh;
-    display: inline-block;
 }
 
 /* blog post 2 - coding soc slideshow */
