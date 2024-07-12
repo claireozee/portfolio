@@ -382,16 +382,6 @@ a:active {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.7);
 }
-  /* Caption text - NOT NEEDED (ADD EXPLANATION?) */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
