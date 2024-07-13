@@ -108,15 +108,37 @@
             <div>
                 <p>I manually input data into the <strong>london_borough_population </strong>table which contained 32 rows (I know this in itself leaves room for human error). Then I used <strong>import wizard </strong>to populate the remaining tables. Doing it manually would be counterproductive as they contained more rows (hundreds and even thousands of rows for some tables).</p>
             </div>
-            <h2>tableau images here</h2>
+            </br>
+
+            <h4><u>Step 4: Data Analysis</u></h4>
             <div>
-                <p>text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here  text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here </p>
+                <p>I convert a business question into a query in order to obtain the desired result.</p>
             </div>
+            </br>
+
+            <h4><u>Step 5: Data Visualisation</u></h4>
+            <div>
+                <p>Tableau</p>
+            </div>
+
+            <div class="project-backbutton">
+                <button class="read-button project-back">Back</button>
+              </div>  
             
         </div>
+
+
+
+
+
+
         <div class="project2" style = "display: none">
             <p>project thing hererererere</p>
         </div>
+
+         
+
+
     </div>
         <!-- https://codepen.io/jakob-e/pen/vYMEapr -->
     <div class="footer project-footer">
@@ -135,6 +157,10 @@ $(document).ready(function() {
           $('.project-summary').css('display', 'none');
           $('.project1-data-analysis').fadeIn("slow");
       });
+      $('.project-back').click(function() {
+        $('.project1-data-analysis').css('display', 'none');
+            $('.container').fadeIn("slow");
+        });
   });
 </script>
 </body>
