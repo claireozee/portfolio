@@ -277,9 +277,13 @@ a:active {
 .data-analysis:hover {
     color: white
 }
+.pseudo {
+    width: 20vw;
+}
 .eer-diagram {
-    height: 90vh;
-    width: auto; /* FIX */
+    width: 50vw;
+    height: auto;
+     /* FIX */
 }
 
 /*blog*/ 

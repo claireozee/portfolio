@@ -71,11 +71,42 @@
         <div class="project1-data-analysis" style = "display: none">
             <h2>Where to buy a house in London?</h2>
             <div>
-                <p>text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here <a href="https://www.kaggle.com/datasets/sabihxh/london-boroughs" target="_blank"> this Kaggle data set</a> text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here </p>
+                <h4><u>Idea and summary</u></h4>
+                <p>Having grown up in London, I've witnessed numerous amounts of people moving in and out of the city as a result of the many changes that have occurred. There are many factors that could have contributed to these decisions, but this project addresses: crime rate, average house price and the borough population. Many have said that they'd like to buy a house in London, so I decided to address the age-old question: where is the best place to buy?</p>
+            </br>
+
+                <h4><u>Step 1: Acquiring Data</u></h4>
+                <p>I decided to do a project around a topic of interest. Initially I considered doing a project comparing gold and silver prices, because I had worked with jewellery for the past two years. However, I thought the topic of house prices was more relatable and something I'd like to make steps towards in future. I used <a href="https://www.kaggle.com/datasets/sabihxh/london-boroughs" target="_blank"> this data set from Kaggle</a> which worked well for my topic of choice.</p>
+            </br>
+
+                <h4><u>Step 2: Cleaning Data</u></h4>
+                <p>I had heard that cleaning data will take up the bulk of the project, which I did realise to be true when I actually had to do it myself. Because they tables were all saved as excel files, it made this step easier. It was a lengthy process, because there were times where I missed correcting a few rows and I only realised after importing, so I had to delete the table, go back and finish cleaning it, export it and use it to populate the table again. I learnt that it's better to take my time and do this step properly than to do it in a rush and encounter errors later. Some of the steps I did included:
+                </p>
+                <ol type="a">
+                    <li>Checking each field had a value and that there were no null values in the tables.</li>
+                    <li>Ensuring the date ranges were consistent across all the tables. Initially they weren't, so I selected a range that worked and deleted the ones that were outside that range. For example, since some tables had more rows of data and others didn't, I deleted those extra rows. I chose Sep 2016 - May 2018 for .. and Jan 2000 - May 2018 for .... </li>
+                    <li>Some of the house prices were to 3 decimal places, so I rounded them accordingly to 2 (which makes sense since currencies are to 2dp).</li>
+                    <li>Changes all the date formats so they were consistent with the MySQL "YYYY-MM-DD" format. I encountered a few importing errors until I did this step (i.e. Import Wizard didn't work). Since the Kaggle data didn't come with the actual day of the month, I made an assumption and did them as 01 (the first day of each month).</li>
+                </ol>
+                    <p>After these steps, I exported the tables as CSV files.</p>
+                    <p><i><strong>Note:</strong> I have the understanding that rounding and assumptions (steps c & d) take away a degree of accuracy from the overall results, and it can be argued that it affects the overall data quality because it's not the same as the source data... but I believe that's a topic for another day.</i></p>
+                </br>
+
+                <h4><u>Step 3: Creating & Populating Tables</u></h4>
+                <p>I knew that the tables created in the database had to have consistent headings with the CSV files, so I went on to create such. However, I soon realised that I didn't identify the primary keys (PK) and foreign keys (FK) in each one. I could've edited it using the MySQL Workbench interface, but I preferred doing so as I wrote the SQL code to create the tables (to form a habit of it), so I deleted all the tables and created them again. On a separate document, I wrote "pseudo outline" of the tables I wanted to create, identifying each PK and FK. That's the most important part of creating a <strong>relational </strong>database, so I made sure I outlined everything correctly. I added an ID column to each table (and excel table also).</p>                  
+
+                <p><i>At this stage, I noticed a few <strong>discrepancies </strong>with the data: 
+                <ul>
+                    <li>The <strong>london_borough_population</strong> table didn't include the City of London, but it's included in the <strong>average_price</strong> and <strong>sales_volume </strong>tables.</li>
+                    <li>The <strong>borough_level_crime </strong>table has no borough ID for London Heathrow and London City Airports. They are not boroughs, but I beileve they were included becasue of the level of crime that occurs there. I didn't delete the rows of data, but I manually input "N/A".</li>
+                </ul></i></p>
             </div>
-            <img class="eer-diagram" src="static/images/EER-diagram.png">
+            <div class="sql-tables">
+                <img class="pseudo" src="static/images/pseudo.JPG">
+                <img class="eer-diagram" src="static/images/EER-diagram.png">
+            </div>
             <div>
-                <p>text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here  text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here text all here </p>
+                <p>I manually input ...which contained 32 rows of data (I know this in itself leaves room for human error).</p>
             </div>
             <h2>tableau images here</h2>
             <div>
