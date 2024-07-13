@@ -112,6 +112,8 @@ a:active {
 }
 .nav-active {
     border-bottom: 3px solid rgb(21, 89, 178);
+    font-weight: 800;
+    color: white;
 }
 #index1footer, .navbar-index {
     position: fixed;
