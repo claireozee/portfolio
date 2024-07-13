@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="content" id="projects-content">
-        <p id="project-summary"><i>This page contains a series of personal projects I have worked on to develop my overall coding skills. My initial project was this portfolio site, where I used my knowledge of front end web development.</br>
+        <p class="project-summary"><i>This page contains a series of personal projects I have worked on to develop my overall coding skills. My initial project was this portfolio site, where I used my knowledge of front end web development.</br>
         Click on each project name to be taken to its page.</i></p>
     
         <section class="container">
@@ -57,20 +57,20 @@
                     <img src="static/images/data.jpg" class="profession_image" alt="Profession" /> <!--class not needed-->
                     <img src="static/images/data-dark.jpg" class="profile_image" alt="Profile" />
                     <div class="profile_detail">
-                        <span><a href="https://claireozee.github.io/DataAnalysis/" target="_blank">Data Analysis</a></span>
+                        <span><h4 class="data-analysis">Data Analysis</h4></span>
                         <p>Where to buy a house? <strong>May 2024</strong></p>
                     </div>
                     <div class="wrapper">			
                         <div class="profile_quote">
-                            <p>This project was part of a Data & SQL course I completed with <a href="https://codefirstgirls.com/" target="_blank">CodeFirst: Girls</a>
-                            </br>
-                            Project goals:</br>
-                            Technologies used: SQL</p></br></br>
+                            <p>Created a relational database to explore where the best place to buy a house in London is, based on a number of contributing factors.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="project1-data-analysis" style = "display: none">
+            <p>project thing hererererere</p>
+        </div>
     </div>
         <!-- https://codepen.io/jakob-e/pen/vYMEapr -->
     <div class="footer project-footer">
@@ -80,8 +80,16 @@
        </div>
        <p id="copyright"><small><small>© Ozee 2020</small></small></p>
    </div>    
-<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/site.js') }}"></script>
-<script src="https://kit.fontawesome.com/ace997583a.js"></script>
+   <script src="https://kit.fontawesome.com/ace997583a.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.data-analysis').click(function() {
+          $('.container').css('display', 'none');
+          $('.project-summary').css('display', 'none');
+          $('.project1-data-analysis').fadeIn("slow");
+      });
+  });
+</script>
 </body>
 </html>
