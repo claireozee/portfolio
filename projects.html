@@ -72,20 +72,20 @@
             <h2>Where to buy a house in London?</h2>
             <div>
                 <h4><u>Idea and summary</u></h4>
-                <p>Having grown up in London, I've witnessed numerous amounts of people moving in and out of the city as a result of the many changes that have occurred. There are many factors that could have contributed to these decisions, but this project addresses: crime rate, average house price and the borough population. Many have said that they'd like to buy a house in London, so I decided to address the age-old question: where is the best place to buy?</p>
+                <p>Having grown up in London, I've witnessed numerous amounts of people moving in and out of the city as a result of the many changes that have occurred. There are many factors that could have contributed to these decisions, but this project explores crime rate, average house price and the borough population. Many have said that they'd like to buy a house in London, so I decided to address the age-old question: where is the best place to buy?</p>
             </br>
 
                 <h4><u>Step 1: Acquiring Data</u></h4>
-                <p>I decided to do a project around a topic of interest. Initially I considered doing a project comparing gold and silver prices, because I had worked with jewellery for the past two years. However, I thought the topic of house prices was more relatable and something I'd like to make steps towards in future. I used <a href="https://www.kaggle.com/datasets/sabihxh/london-boroughs" target="_blank"> this data set from Kaggle</a> which worked well for my topic of choice.</p>
+                <p>I decided to do a project around a genuine topic of interest, as opposed to something random. Initially I considered doing a project comparing gold and silver prices, because I had worked with jewellery for the past two years. However, I thought the topic of house prices was more relatable and something I'd like to make steps towards in future. I used <a href="https://www.kaggle.com/datasets/sabihxh/london-boroughs" target="_blank"> this data set from Kaggle</a> which worked well for my topic of choice.</p>
             </br>
 
                 <h4><u>Step 2: Cleaning Data</u></h4>
-                <p>I had heard that cleaning data will take up the bulk of the project, which I did realise to be true when I actually had to do it myself. Because they tables were all saved as excel files, it made this step easier. It was a lengthy process, because there were times where I missed correcting a few rows and I only realised after importing, so I had to delete the table, go back and finish cleaning it, export it and use it to populate the table again. I learnt that it's better to take my time and do this step properly than to do it in a rush and encounter errors later. Some of the steps I did included:
+                <p>I was told on numerous occasions that cleaning data will take up the bulk of the project, which I did realise to be true when I actually had to do it myself. Because the tables were all saved as excel files, it made this step easier. It was a lengthy process because there were times where I missed correcting a few rows and I only realised after importing, so I had to delete the table, go back and finish cleaning the data, export it and use it to populate the table again. I learnt that it's better to take my time and do this step properly, than to do it in a rush and encounter errors later. Some of the steps I did included:
                 </p>
                 <ol type="a">
-                    <li>Checking each field had a value and that there were no null values in the tables.</li>
-                    <li>Ensuring the date ranges were consistent across all the tables. Initially they weren't, so I selected a range that worked and deleted the ones that were outside that range. For example, since some tables had more rows of data and others didn't, I deleted those extra rows. I chose Sep 2016 - May 2018 for .. and Jan 2000 - May 2018 for .... </li>
-                    <li>Some of the house prices were to 3 decimal places, so I rounded them accordingly to 2 (which makes sense since currencies are to 2dp).</li>
+                    <li>Checking that there were no null values, i.e. each row was populated.</li>
+                    <li>Ensuring the date ranges were consistent across all the tables. Initially they weren't, so I selected a range that worked and deleted the ones that were outside that range. For example, since some tables had more rows of data and others didn't, I deleted those extra rows.</li>
+                    <li>Some of the house prices were to 3 decimal places, so I rounded them accordingly to 2 (which makes sense since currencies are to 2 decimal places).</li>
                     <li>Changes all the date formats so they were consistent with the MySQL "YYYY-MM-DD" format. I encountered a few importing errors until I did this step (i.e. Import Wizard didn't work). Since the Kaggle data didn't come with the actual day of the month, I made an assumption and did them as 01 (the first day of each month).</li>
                 </ol>
                     <p>After these steps, I exported the tables as CSV files.</p>
@@ -106,7 +106,7 @@
                 <img class="eer-diagram" src="static/images/EER-diagram.png">
             </div>
             <div>
-                <p>I manually input ...which contained 32 rows of data (I know this in itself leaves room for human error).</p>
+                <p>I manually input data into the <strong>london_borough_population </strong>table which contained 32 rows (I know this in itself leaves room for human error). Then I used <strong>import wizard </strong>to populate the remaining tables. Doing it manually would be counterproductive as they contained more rows (hundreds and even thousands of rows for some tables).</p>
             </div>
             <h2>tableau images here</h2>
             <div>
