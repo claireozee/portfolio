@@ -20,13 +20,16 @@
     <div class="content" id="all-blog-posts">
       <div class="blogpost-grid">
         
-        <div class="blogpost-box" style="display:none">
-          <p>Information is beatiful event?</p>
+        <div class="blogpost-box">
+          <img src="static/images/iib.jpg" class="blogpost-pic">
+          <div class="blogpost-title">Information is beatiful - the live event</div>
+          <div class="blogpost-subtitle">November 2024</div>
+          <button class="read-button blogpost-5">Read</button>
         </div>
-
+        
         <div class="blogpost-box">
             <img src="static/images/math-art.jpg" class="blogpost-pic">
-              <div class="blogpost-title">Data analysis: where mathematics meets art...</div>
+              <div class="blogpost-title">Data analysis: where mathematics meets art</div>
               <div class="blogpost-subtitle">March 2024</div>
               <button class="read-button blogpost-4">Read</button>
         </div>
@@ -44,13 +47,26 @@
         </div>
         <div class="blogpost-box">
               <img src="static/images/twitter.jpeg" class="blogpost-pic">
-              <div class="blogpost-title">How #100DaysOfCode lead to an interest in technology...</div>
+              <div class="blogpost-title">How #100DaysOfCode lead to an interest in technology</div>
               <div class="blogpost-subtitle">August 2020</div>
               <button class="read-button blogpost-1">Read</button>
         </div>     
       </div>
 
     </br></br>
+    <div class="experience-here e5" style="display: none">
+      <h2>heading here - IIB talk</h2>
+      <h4 class="blogpost-subtitle">Nov 2024</h4>
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+        <div class="blog-backbutton">
+          <button class="read-button blogpost-back">Back</button>
+        </div>
+    </div>
     <div class="experience-here e4" style="display: none">
       <h2>heading here</h2>
       <h4 class="blogpost-subtitle">date here</h4>
@@ -330,6 +346,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
+      $('.blogpost-5').click(function() {
+            $('.blogpost-grid').css('display', 'none');
+            $('.e5').fadeIn("slow");
+        });
       $('.blogpost-4').click(function() {
             $('.blogpost-grid').css('display', 'none');
             $('.e4').fadeIn("slow");
@@ -347,6 +367,7 @@
             $('.e1').fadeIn("slow");
         });
         $('.blogpost-back').click(function() {
+            $('.e5').css('display', 'none');
             $('.e4').css('display', 'none');
             $('.e3').css('display', 'none');
             $('.e2').css('display', 'none');
