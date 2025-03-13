@@ -138,7 +138,7 @@
 
 
 
-        <div class="project2" style = "display: none">
+        <div class="project2-index-analysis" style = "display: none">
             <p>project thing hererererere</p>
         </div>
 
@@ -163,8 +163,14 @@ $(document).ready(function() {
           $('.project-summary').css('display', 'none');
           $('.project1-data-analysis').fadeIn("slow");
       });
+      $('.index-analysis').click(function() {
+          $('.container').css('display', 'none');
+          $('.project-summary').css('display', 'none');
+          $('.project2-index-analysis').fadeIn("slow");
+      });
       $('.project-back').click(function() {
         $('.project1-data-analysis').css('display', 'none');
+        $('.project2-index-analysis').css('display', 'none');
             $('.project-summary').fadeIn("slow");
             $('.container').fadeIn("slow");
         });
