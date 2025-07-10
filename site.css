@@ -156,7 +156,9 @@ a:active {
     float: right;
     width: 30%;
 }
-
+.cv-skills {
+    padding-left: 5%;
+}
 .cv-section-header{
     color:rgb(21, 89, 178);
 }
