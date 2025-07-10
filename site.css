@@ -142,6 +142,22 @@ a:active {
 .cv-content { 
     display: block;
 }
+.cv-columns {
+    display: flex
+}
+.cv-col1 {
+    border-style: dashed;
+    float: left;
+    width: 70%;
+    padding-right: 5%;
+}
+.cv-col2 {
+    border-style: dotted;
+    float: right;
+    width: 30%;
+}
+
+
 .experience-company-name {
     color:rgb(21, 89, 178);
 }
