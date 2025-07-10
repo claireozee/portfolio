@@ -157,10 +157,12 @@ a:active {
     width: 30%;
 }
 
-
-.experience-company-name {
+.cv-section-header{
     color:rgb(21, 89, 178);
 }
+/*.experience-company-name {
+    color:rgb(21, 89, 178);
+}*/
 .experience-company-name h3 {
     margin-bottom: 0;
 }
