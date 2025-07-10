@@ -146,18 +146,16 @@ a:active {
     display: flex
 }
 .cv-col1 {
-    border-style: dashed;
     float: left;
     width: 70%;
     padding-right: 5%;
 }
 .cv-col2 {
-    border-style: dotted;
     float: right;
     width: 30%;
 }
 .cv-skills {
-    padding-left: 5%;
+    padding-left: 6%;
 }
 .cv-section-header{
     color:rgb(21, 89, 178);
