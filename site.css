@@ -447,6 +447,12 @@ a:active {
     border-radius: 1rem;
 }
 
+.qmcs-pres-right {
+    float: right;
+    height: 50vh;
+    margin: 3%;
+}
+
 
 
 
